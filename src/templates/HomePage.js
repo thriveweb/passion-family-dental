@@ -2,9 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
 import Layout from '../components/Layout'
-import Accordion from '../components/Accordion'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
@@ -21,19 +19,6 @@ export const HomePageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
-
-    <section className="section">
-      <div className="container">
-        <Content source={body} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <h2 className="taCenter">Accordion</h2>
-        <Accordion items={accordion} />
-      </div>
-    </section>
   </main>
 )
 
@@ -53,15 +38,10 @@ export const pageQuery = graphql`
   ## query name must be unique to this file
   query HomePage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
         subtitle
         featuredImage
-        accordion {
-          title
-          content
-        }
       }
     }
   }

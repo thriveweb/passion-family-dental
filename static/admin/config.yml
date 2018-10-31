@@ -194,41 +194,40 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
-          - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Body, name: body, widget: markdown }
-          - label: 'Accordion'
-            name: 'accordion'
-            widget: 'list'
-            required: false
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: Content, name: content, widget: text }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
+          - { label: Description, name: description, widget: text }
+          - label: 'Services Section'
+            name: 'servicesSection'
             widget: 'object'
             fields:
-              - { label: Title, name: title, widget: string, required: false }
+              - { label: Title, name: title, widget: string }
               - {
-                  label: Description,
-                  name: description,
+                  label: Short Description,
+                  name: shortDescription,
                   widget: text,
-                  required: false,
-                  pattern: ['.{,300}', 'Must not exceed 300 characters'],
                 }
+          - label: 'Benefits Section'
+            name: 'benefitsSection'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string }
               - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
+                  label: Short Description,
+                  name: shortDescription,
+                  widget: text,
                 }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
+              - label: 'Benefits'
+                name: 'benetits'
+                widget: 'list'
+                fields:
+                  - { label: Benefit, name: benefit, widget: string }
+                  - { label: ShortDescription, name: title, widget: text }
+                  - {
+                      label: Featured Image,
+                      name: featuredImage,
+                      widget: image,
+                    }
 
   - name: infoPages
     label: Info Page

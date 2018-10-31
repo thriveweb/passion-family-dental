@@ -42,6 +42,20 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        description
+        servicesSection {
+          title
+          shortDescription
+        }
+        benefitsSection {
+          title
+          shortDescription
+          benetits {
+            benefit
+            shortDescription
+            featuredImage
+          }
+        }
       }
     }
   }

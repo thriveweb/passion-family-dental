@@ -12,7 +12,7 @@ description: >-
   family with gentle dental care of the highest quality in a calm and relaxing
   atmosphere.  
 
-  We are here to build trusting lifetime relationships with you. 
+  We are here to build trusting lifetime relationships with you.
 servicesSection:
   shortDescription: >-
     At Passion Family Dental, we are committed to understand and work together
@@ -23,28 +23,27 @@ servicesSection:
 benefitsSection:
   benetits:
     - benefit: Professional
-      title: >-
+      shortDescription: >-
         We are professional team consisting of lorem ipsum dolor sit amet,
         consectetur adipiscing elit.
       featuredImage: 'https://ucarecdn.com/c1ea4420-2f08-4c00-aa79-c941c0635f19/'
     - benefit: Technology
-      title: >-
+      shortDescription: >-
         We are using te most advanced equipment so you feel more comfortable
         didunt ut labore.
       featuredImage: 'https://ucarecdn.com/e1ca12b1-f933-421d-b494-7e57d063bee6/'
     - benefit: Environment
-      title: >-
+      shortDescription: >-
         Friendly and cosy environment. dicta sunt rem ipsum dolor sit amet,
         consectetur adipiscing elit, sed.
       featuredImage: 'https://ucarecdn.com/c49b215c-87ea-48a0-9ebe-e5c2fa5fa773/'
     - benefit: Convenient
-      title: >-
+      shortDescription: >-
         We offer the convenience of on-the-spot HICAPS claims and quotes for
         your private health insurance.
       featuredImage: 'https://ucarecdn.com/4c562e90-d3e7-412c-ba4e-ce0bd9a878fc/'
   shortDescription: >-
     Our caring team look forward to welcome you and your family to visit our
-    modern, state-of-the-art dental practice. 
+    modern, state-of-the-art dental practice.
   title: Our benefits
 ---
-

@@ -3,7 +3,7 @@ template: HomePage
 slug: ''
 title: "Your Comfort is Our Top Priority \L"
 subtitle: Book your visit today
-featuredImage: 'https://ucarecdn.com/1f081d74-1605-4b63-a807-d41f54549df8/'
+featuredImage: 'https://ucarecdn.com/ed13b7a0-6d1c-4d28-8b63-ed6114d2d68c/'
 description: >-
   Passion Family Dental North Lakes is your friendly family orientated dental
   practice.
@@ -23,25 +23,25 @@ servicesSection:
 benefitsSection:
   benetits:
     - benefit: Professional
-      title: >-
+      featuredImage: 'https://ucarecdn.com/3c271bbc-19be-4042-90b6-390066668ab2/'
+      shortDescription: >-
         We are professional team consisting of lorem ipsum dolor sit amet,
         consectetur adipiscing elit.
-      featuredImage: 'https://ucarecdn.com/c1ea4420-2f08-4c00-aa79-c941c0635f19/'
     - benefit: Technology
-      title: >-
+      featuredImage: 'https://ucarecdn.com/e88dbfe8-2dd5-42f3-a882-cf40b2f7f061/'
+      shortDescription: >-
         We are using te most advanced equipment so you feel more comfortable
         didunt ut labore.
-      featuredImage: 'https://ucarecdn.com/e1ca12b1-f933-421d-b494-7e57d063bee6/'
     - benefit: Environment
-      title: >-
+      featuredImage: 'https://ucarecdn.com/4f27a7c7-1279-40db-bd29-cc38e57ca4ce/'
+      shortDescription: >-
         Friendly and cosy environment. dicta sunt rem ipsum dolor sit amet,
         consectetur adipiscing elit, sed.
-      featuredImage: 'https://ucarecdn.com/c49b215c-87ea-48a0-9ebe-e5c2fa5fa773/'
     - benefit: Convenient
-      title: >-
+      featuredImage: 'https://ucarecdn.com/5ab9bb44-ad63-439a-914d-d0b15803af5f/'
+      shortDescription: >-
         We offer the convenience of on-the-spot HICAPS claims and quotes for
         your private health insurance.
-      featuredImage: 'https://ucarecdn.com/4c562e90-d3e7-412c-ba4e-ce0bd9a878fc/'
   shortDescription: >-
     Our caring team look forward to welcome you and your family to visit our
     modern, state-of-the-art dental practice. 

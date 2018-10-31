@@ -1,23 +1,25 @@
 @import url('https://use.typekit.net/lrx4ixk.css');
 
 :root {
-  --primary: rebeccapurple;
-  --secondary: #212121;
-  --lightGrey: whitesmoke;
-  --midGrey: #cacaca;
-  --darkGrey: #272727;
-  --danger: #ff3d3d;
+  --orange: #e68562;
+  --blue: #71baee;
+  --grey: #f3f1f0;
+  --green: #81c279;
+  --pinkish: #e2605b;
+  --purple: #825799;
+  --black: #353535;
   --font-primary: 'museo-sans', serif;
   --font-secondary: 'museo', serif;
   --font-system: system-ui; /* postcssPresetEnv */
-  --borderRadius: 3px;
+  --borderRadius: 1rem;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   min-height: 100%;
-  background: var(--lightGrey);
+  background: var(--grey);
+  color: var(--black);
 }
 
 body {
@@ -26,7 +28,7 @@ body {
   min-height: 100%;
   position: relative;
   background: white;
-  color: var(--secondary);
+  color: var(--black);
   font-size: 1.6em;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -35,7 +37,7 @@ body {
 }
 
 a {
-  color: var(--primary);
+  color: var(--orange);
 }
 
 strong {
@@ -59,7 +61,7 @@ h6 {
 }
 
 pre {
-  background: var(--lightGrey);
+  background: var(--grey);
   line-height: 1.45;
   font-size: 85%;
   border-radius: 3px;
@@ -69,7 +71,7 @@ pre {
 code {
   font-size: 85%;
   padding: 0.15em 0;
-  background: var(--lightGrey);
+  background: var(--grey);
   border-radius: 3px;
 }
 code:before,
@@ -90,18 +92,18 @@ blockquote {
   line-height: 1.1;
   font-size: 1em;
   font-style: italic;
-  border-left: 2px solid var(--primary);
+  border-left: 2px solid var(--orange);
 }
 
 /* Utility Classes */
 .light {
-  background-color: var(--lightGrey);
+  background-color: var(--grey);
 }
 .white {
   background-color: white;
 }
 .dark {
-  background-color: var(--primary);
+  background-color: var(--orange);
   color: white;
 }
 .dark h1,
@@ -169,8 +171,9 @@ blockquote {
 }
 
 .container {
-  max-width: 1111px;
-  width: 90%;
+  max-width: 120rem;
+  width: 100%;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 .container.skinny {
@@ -183,7 +186,7 @@ blockquote {
 /* Buttons */
 
 .Button {
-  background: var(--primary);
+  background: var(--orange);
   color: white;
   text-transform: uppercase;
   text-decoration: none;

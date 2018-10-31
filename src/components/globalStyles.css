@@ -1,3 +1,5 @@
+@import url('https://use.typekit.net/lrx4ixk.css');
+
 :root {
   --primary: rebeccapurple;
   --secondary: #212121;
@@ -5,7 +7,8 @@
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
+  --font-primary: 'museo-sans', serif;
+  --font-secondary: 'museo', serif;
   --font-system: system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;
 }
@@ -19,6 +22,7 @@ html {
 
 body {
   font-family: var(--font-system);
+  font-family: var(--font-primary);
   min-height: 100%;
   position: relative;
   background: white;
@@ -51,6 +55,7 @@ h5,
 h6 {
   margin: 0;
   margin-bottom: 0.5em;
+  font-family: var(--font-secondary);
 }
 
 pre {

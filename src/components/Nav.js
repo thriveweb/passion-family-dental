@@ -50,6 +50,7 @@ export default class Nav extends Component {
             <NavLink to="/contact/" exact="true">
               Contact
             </NavLink>
+            <button className="Nav--MenuButton Button Primary">Book Now</button>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

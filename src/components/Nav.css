@@ -3,14 +3,15 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  border-bottom: 1px solid var(--lightGrey);
+  border-bottom: 1px solid var(--grey);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
 }
 
 .Nav--Container {
   display: flex;
   align-items: center;
-  height: 6rem;
+  justify-content: space-between;
+  height: 9rem;
 }
 
 .Nav--Links {
@@ -42,13 +43,18 @@
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
+  font-family: var(--font-secondary);
 }
 
 .NavLink:hover,
 .NavLink.active,
 .NavLink:focus {
-  color: var(--primary);
+  color: var(--orange);
   border-bottom-color: currentColor;
+}
+
+.Nav--Links .Nav--MenuButton {
+  display: inline-block;
 }
 
 @media (max-width: 600px) {

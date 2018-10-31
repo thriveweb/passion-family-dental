@@ -2,6 +2,7 @@
 
 :root {
   --orange: #e68562;
+  --orangeDarker: #e57147;
   --blue: #71baee;
   --grey: #f3f1f0;
   --green: #81c279;
@@ -186,24 +187,37 @@ blockquote {
 /* Buttons */
 
 .Button {
-  background: var(--orange);
+  position: relative;
+  background: transparent;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
+  font-family: var(--font-secondary);
   letter-spacing: 0.05em;
   font-size: 1.4rem;
-  display: inline-block;
-  padding: 1.25rem 3rem;
+  padding: 1.3rem 3rem;
   border: none;
   transition: all 0.2s ease;
   cursor: pointer;
-  border-radius: var(--borderRadius);
+  border-radius: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.7rem;
+  justify-content: center;
+  z-index: 0;
 }
 .Button:hover,
 .Button:focus {
   opacity: 0.95;
   outline: none;
+}
+.Button:hover::after,
+.Button:focus::after {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .Button[disabled] {
   opacity: 0.4;
@@ -219,4 +233,31 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.Button::before,
+.Button::after {
+  position: absolute;
+  content: '';
+  border-radius: 2.5rem;
+  display: inline-block;
+}
+
+.Button::before {
+  background: var(--orange);
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Button::after {
+  background: var(--orangeDarker);
+  height: 0;
+  width: 0;
+  top: 50%;
+  left: 50%;
+  transition: ease-in-out all 0.3s;
+  z-index: -1;
 }

@@ -44,6 +44,7 @@
   border-bottom: 2px solid;
   border-bottom-color: transparent;
   font-family: var(--font-secondary);
+  text-transform: capitalize;
 }
 
 .NavLink:hover,
@@ -55,6 +56,13 @@
 
 .Nav--Links .Nav--MenuButton {
   display: inline-block;
+  margin-left: 2rem;
+}
+
+.Nav--Links .Nav--MenuButton svg {
+  bottom: 0;
+  position: relative;
+  margin-right: 1rem;
 }
 
 @media (max-width: 600px) {

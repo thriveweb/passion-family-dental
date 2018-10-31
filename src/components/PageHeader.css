@@ -1,11 +1,46 @@
 .PageHeader {
+  position: relative;
   background-color: var(--darkGrey);
   color: white;
   padding: 15rem 0;
+  clip-path: url(#headerClipPath);
+  z-index: 0;
+  overflow: hidden;
 }
 
-.PageHeader .BackgroundImage {
-  opacity: 0.8;
+.PageHeader .BackgroundImage::after,
+.PageHeader .BackgroundImage::before {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.PageHeader .BackgroundImage::before {
+  height: 60rem;
+  width: 60rem;
+  background-color: var(--purple);
+  bottom: -22rem;
+  left: -15rem;
+  z-index: 0;
+}
+
+.PageHeader .BackgroundImage::after {
+  height: 40rem;
+  width: 40rem;
+  background-color: var(--orange);
+  bottom: -15rem;
+  left: 15rem;
+  z-index: 0;
+}
+
+.PageHeader.PageHeader-large .BackgroundImage::before {
+  bottom: -7rem;
+}
+
+.PageHeader.PageHeader-large .BackgroundImage::after {
+  bottom: 4rem;
 }
 
 .PageHeader-large {
@@ -33,4 +68,20 @@
   .PageHeader-large {
     padding: 12.5rem 0;
   }
+}
+
+.PageHeader .Figure {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  z-index: 3;
 }

@@ -25,11 +25,17 @@ const PageHeader = ({
         />
       )}
       <div className="container relative">
-        <h1 className="PageHeader--Title">{title}</h1>
-        {subtitle && (
+        <h1 className="PageHeader--Title">Your Comfort is</h1>
+        {!subtitle && (
           <Content className="PageHeader--Subtitle" src={subtitle} />
         )}
       </div>
+
+      <Image
+        className="Figure"
+        src="/images/headerFigure.svg"
+        alt="header background figure"
+      />
     </div>
   )
 }

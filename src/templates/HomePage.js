@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
-import Content from '../components/Content'
+import './HomePage.css'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
@@ -23,16 +23,18 @@ export const HomePageTemplate = ({
       button={{ link: '/contact', label: 'Contact us' }}
     />
 
-    {!!description && (
-      <section className="section">
-        <div className="container">
-          <Content source={description} />
-          <a href="tel:" className="Button">
-            Call us
-          </a>
-        </div>
-      </section>
-    )}
+    <section className="Home--QuoteSection section">
+      <div className="container">
+        <p className="quote">{description}</p>
+        <a href="tel:" className="Button">
+          Call us
+        </a>
+      </div>
+    </section>
+
+    <section className="Home--Services section">
+      <div className="container" />
+    </section>
   </main>
 )
 

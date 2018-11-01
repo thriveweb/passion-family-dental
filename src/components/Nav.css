@@ -33,6 +33,9 @@
 .Nav--MenuButton {
   display: none;
 }
+.Nav--MenuButton.Button.Icon {
+  box-shadow: none;
+}
 
 .NavLink {
   padding: 0.5rem 1rem;

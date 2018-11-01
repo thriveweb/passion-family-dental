@@ -1,0 +1,9 @@
+.Home--QuoteSection .container {
+  text-align: center;
+}
+
+.Home--QuoteSection .quote {
+  max-width: 100rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}

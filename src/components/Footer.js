@@ -7,10 +7,10 @@ import './Footer.css'
 
 export default ({ globalSettings, socialSettings, navLinks }) => (
   <footer className="Footer">
-    <div className="container taCenter">
-      <div class="Flexbox">
+    <div className="container">
+      <div className="Flexbox Footer--Content">
         <div>
-          <h4>Opening hours</h4>
+          <h3>Opening hours</h3>
           <p>
             Mon - Fri: 8:00am-6:00pm
             <br />
@@ -21,16 +21,18 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
         </div>
         <div>
           <Image
-            className="Figure"
+            className="Footer--Logo"
             src="/images/footerLogo.svg"
             alt="footer logo passion family dental"
           />
         </div>
         <div>
-          <h4>Info</h4>
-          <Link to="/about">About Us</Link>
-          <Link to="/patient-info">Patient Info</Link>
-          <Link to="/contact">Contact</Link>
+          <h3>Info</h3>
+          <p>
+            <Link to="/about">About Us</Link>
+            <Link to="/patient-info">Patient Info</Link>
+            <Link to="/contact">Contact</Link>
+          </p>
         </div>
       </div>
       <div className="Footer--Copy Flexbox">
@@ -44,9 +46,17 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
           </p>
         </div>
         <div>
-          <Link to="/faq">FAQ</Link>
-          <Link to="/privacy">Privacy</Link>
-          <Link to="/disclaimer">Disclaimer</Link>
+          <p>
+            <Link className="Link" to="/faq">
+              FAQ
+            </Link>
+            <Link className="Link" to="/privacy">
+              Privacy
+            </Link>
+            <Link className="Link" to="/disclaimer">
+              Disclaimer
+            </Link>
+          </p>
         </div>
       </div>
     </div>

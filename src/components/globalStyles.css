@@ -39,7 +39,8 @@ body {
 }
 
 a {
-  color: var(--orange);
+  color: inherit;
+  text-decoration: none;
 }
 
 strong {
@@ -48,7 +49,10 @@ strong {
 
 p {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  opacity: 0.8;
 }
 
 h1,
@@ -60,6 +64,17 @@ h6 {
   margin: 0;
   margin-bottom: 0.5em;
   font-family: var(--font-secondary);
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 6.6rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-bottom: 3rem;
 }
 
 pre {
@@ -117,6 +132,10 @@ blockquote {
   color: var(--white);
 }
 
+/*
+  Utility
+ */
+
 .relative {
   position: relative;
 }
@@ -135,6 +154,13 @@ blockquote {
 }
 .taRight {
   text-align: right;
+}
+
+.Flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .Figure {

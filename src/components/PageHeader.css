@@ -8,6 +8,27 @@
   overflow: hidden;
 }
 
+.PageHeader--Title {
+  max-width: 60rem;
+  font-weight: 500;
+  line-height: 7.4rem;
+}
+
+.PageHeader--Subtitle {
+  display: inline-block;
+}
+
+.PageHeader--Subtitle p {
+  font-size: 3.6rem;
+  opacity: 1;
+  font-family: var(--font-secondary);
+  font-weight: 300;
+}
+
+.PageHeader--Button {
+  margin-left: 4rem;
+}
+
 .PageHeader .BackgroundImage::after,
 .PageHeader .BackgroundImage::before {
   content: '';
@@ -44,7 +65,7 @@
 }
 
 .PageHeader-large {
-  padding: 20rem 0;
+  padding: 30rem 0 20rem;
 }
 
 .PageHeader--Subtitle {

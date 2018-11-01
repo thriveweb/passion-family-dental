@@ -1,7 +1,7 @@
 ---
 template: HomePage
 slug: ''
-title: "Your Comfort is Our Top Priority \L"
+title: 'Your Comfort is Our Top Priority'
 subtitle: Book your visit today
 featuredImage: 'https://ucarecdn.com/ed13b7a0-6d1c-4d28-8b63-ed6114d2d68c/'
 description: >-

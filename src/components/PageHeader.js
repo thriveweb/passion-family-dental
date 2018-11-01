@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import Image from './Image'
@@ -8,6 +9,7 @@ import './PageHeader.css'
 const PageHeader = ({
   title,
   subtitle,
+  button,
   backgroundImage,
   large,
   className = ''
@@ -25,9 +27,14 @@ const PageHeader = ({
         />
       )}
       <div className="container relative">
-        <h1 className="PageHeader--Title">Your Comfort is</h1>
-        {!subtitle && (
+        {!!title && <h1 className="PageHeader--Title">{title}</h1>}
+        {!!subtitle && (
           <Content className="PageHeader--Subtitle" src={subtitle} />
+        )}
+        {!!button && (
+          <Link to={button.link} className="PageHeader--Button Button Blue">
+            {button.label}
+          </Link>
         )}
       </div>
 

@@ -3,19 +3,11 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import Content from '../components/Content.js'
-import Layout from '../components/Layout.js'
+import Layout from '../components/Layout'
 import './AboutPage.css'
 
 // Export Template for use in CMS preview
-export const AboutPageTemplate = ({
-  title,
-  subtitle,
-  featuredImage,
-  section1,
-  section2,
-  body
-}) => (
+export const AboutPageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="About">
     <Helmet>
       <title>{title}</title>
@@ -25,18 +17,6 @@ export const AboutPageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
-
-    <section className="section">
-      <div className="container">
-        <Content source={section1} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section2} />
-      </div>
-    </section>
   </main>
 )
 
@@ -55,10 +35,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         template
-        subtitle
         featuredImage
-        section1
-        section2
       }
     }
   }

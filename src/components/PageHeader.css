@@ -1,7 +1,7 @@
 .PageHeader {
   position: relative;
   background-color: var(--darkGrey);
-  color: white;
+  color: var(--white);
   padding: 15rem 0;
   clip-path: url(#headerClipPath);
   z-index: 0;
@@ -71,17 +71,10 @@
 }
 
 .PageHeader .Figure {
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: auto;
-  user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   z-index: 3;
 }

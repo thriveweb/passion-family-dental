@@ -8,7 +8,6 @@ import { ChevronLeft } from 'react-feather'
 import Content from '../components/Content'
 import Image from '../components/Image'
 import Layout from '../components/Layout'
-import './SinglePost.css'
 
 export const SinglePostTemplate = ({
   title,
@@ -130,23 +129,23 @@ export const pageQuery = graphql`
   ## query name must be unique to this file
   query SinglePost($id: String!) {
     post: markdownRemark(id: { eq: $id }) {
-      html
       id
       frontmatter {
         title
         template
-        subtitle
-        date
-        categories {
-          category
-        }
         featuredImage
+        quote
+        shortDescription
+        serviceBlocks {
+          content
+          title
+        }
+        documents
       }
     }
 
     allPosts: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "posts" } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
         node {

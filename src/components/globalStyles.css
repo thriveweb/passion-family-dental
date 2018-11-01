@@ -9,6 +9,7 @@
   --pinkish: #e2605b;
   --purple: #825799;
   --black: #353535;
+  --white: #fff;
   --font-primary: 'museo-sans', serif;
   --font-secondary: 'museo', serif;
   --font-system: system-ui; /* postcssPresetEnv */
@@ -19,7 +20,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   min-height: 100%;
-  background: var(--grey);
+  background: var(--white);
   color: var(--black);
 }
 
@@ -28,7 +29,7 @@ body {
   font-family: var(--font-primary);
   min-height: 100%;
   position: relative;
-  background: white;
+  background: var(--white);
   color: var(--black);
   font-size: 1.6em;
   font-weight: 400;
@@ -101,11 +102,11 @@ blockquote {
   background-color: var(--grey);
 }
 .white {
-  background-color: white;
+  background-color: var(--white);
 }
 .dark {
   background-color: var(--orange);
-  color: white;
+  color: var(--white);
 }
 .dark h1,
 .dark h2,
@@ -113,7 +114,7 @@ blockquote {
 .dark h4,
 .dark h5,
 .dark h6 {
-  color: white;
+  color: var(--white);
 }
 
 .relative {
@@ -134,6 +135,17 @@ blockquote {
 }
 .taRight {
   text-align: right;
+}
+
+.Figure {
+  position: absolute;
+  height: auto;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 @keyframes fadeIn {
@@ -189,7 +201,7 @@ blockquote {
 .Button {
   position: relative;
   background: transparent;
-  color: white;
+  color: var(--white);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;

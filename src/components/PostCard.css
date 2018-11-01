@@ -1,6 +1,6 @@
 .PostCard {
   text-decoration: none;
-  background: white;
+  background: var(--white);
   color: inherit;
   border: 1px solid var(--grey);
   border-radius: var(--borderRadius);

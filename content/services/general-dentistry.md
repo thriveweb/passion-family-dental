@@ -2,7 +2,7 @@
 template: SingleService
 title: General Dentistry
 featuredImage: 'https://ucarecdn.com/74000439-0df9-4e2d-8329-80ab38f22fb3/'
-icon: 'https://ucarecdn.com/6c58b91d-c85b-46a1-8c1e-7d5622af39a4/'
+icon: 'https://ucarecdn.com/1a7e1b2a-bbfa-4445-a318-62f53823705e/'
 quote: |-
   Some intro to the general dentistry service lorem ipsum dolor sit amet,
     consectetur adipiscing elit.
@@ -26,3 +26,4 @@ documents:
   - 'https://ucarecdn.com/ff3a7130-e1c5-43c9-af9d-0ae27acc364c~2/nth/0/'
   - 'https://ucarecdn.com/ff3a7130-e1c5-43c9-af9d-0ae27acc364c~2/nth/1/'
 ---
+

@@ -325,6 +325,34 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Noindex, name: noindex, widget: boolean, required: false }
 
+  - name: 'global-content'
+    label: 'Global Content'
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - file: 'content/global-content/footer-section.md'
+        label: 'Footer Section'
+        name: 'footer-section'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: content, name: content, widget: text }
+      - file: 'content/global-content/footer.md'
+        label: 'Footer'
+        name: 'footer'
+        fields:
+          - label: 'Opening Hours'
+            name: 'openingHours'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: content,
+                  name: content,
+                  widget: markdown,
+                  buttons: { bulleted-list, bold, italic },
+                }
+
   - name: 'settings'
     label: 'Settings'
     delete: false # Prevent users from deleting documents in this collection

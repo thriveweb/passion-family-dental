@@ -34,7 +34,7 @@ export const HomePageTemplate = ({
       <section className="Home--QuoteSection section">
         <div className="container">
           <p className="larger">{description}</p>
-          <a href="tel:" className="Button">
+          <a href="/contact" className="Button">
             Call us
           </a>
         </div>

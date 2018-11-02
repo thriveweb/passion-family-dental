@@ -3,7 +3,9 @@ import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
+import Image from '../components/Image'
 import ServicesGrid from '../components/ServicesGrid'
+
 import './HomePage.css'
 
 // Export Template for use in CMS preview
@@ -42,6 +44,11 @@ export const HomePageTemplate = ({
             <p className="larger">{servicesSection.shortDescription}</p>
             {!!services && <ServicesGrid services={services} />}
           </div>
+          <Image
+            className="Figure"
+            src="/images/servicesFigure.svg"
+            alt="services background figure"
+          />
         </section>
       )}
     </main>

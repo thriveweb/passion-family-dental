@@ -241,10 +241,13 @@ blockquote {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 1150px;
   width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
+}
+.container.larger {
+  max-width: 1440px;
 }
 .container.skinny {
   max-width: 888px;

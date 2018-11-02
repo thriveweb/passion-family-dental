@@ -31,7 +31,7 @@ export default class Nav extends Component {
 
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
-        <div className="Nav--Container container">
+        <div className="Nav--Container container larger">
           <Link to="/" onClick={this.handleLinkClick} title="Home">
             <Logo />
           </Link>

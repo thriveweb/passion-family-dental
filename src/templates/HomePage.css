@@ -8,6 +8,19 @@
   margin-bottom: 5rem;
 }
 
+.Home--Services {
+  position: relative;
+  z-index: 0;
+  padding-top: 15rem;
+}
+
 .Home--Services p {
   margin-bottom: 7.5rem;
+}
+
+.Home--Services .Figure {
+  top: -4vw;
+  right: 0;
+  z-index: -1;
+  width: 90%;
 }

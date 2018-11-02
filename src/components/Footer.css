@@ -3,12 +3,15 @@
   padding: 3rem 0;
   background: var(--purple);
   color: var(--white);
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .Footer .Figure {
   bottom: 100%;
   width: 100%;
   height: auto;
+  max-height: 3rem;
 }
 
 .Footer--Content {

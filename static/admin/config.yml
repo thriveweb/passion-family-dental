@@ -284,7 +284,12 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: Title, name: title, widget: string }
       - { label: Featured Image, name: featuredImage, widget: image }
-      - { label: Icon, name: icon, widget: image }
+      - {
+          label: Icon,
+          name: icon,
+          widget: file,
+          hint: 'Please use .svg files only',
+        }
       - { label: Quote, name: quote, widget: text }
       - { label: Short Description, name: shortDescription, widget: text }
       - label: 'Service Blocks'

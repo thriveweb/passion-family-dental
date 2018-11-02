@@ -44,7 +44,7 @@ const PageHeader = ({
 
       <Image
         className="Figure"
-        src="/images/headerFigure.svg"
+        src="/images/headerFigure.png"
         alt="header background figure"
       />
     </div>

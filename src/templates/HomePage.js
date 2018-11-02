@@ -49,7 +49,7 @@ export const HomePageTemplate = ({
           </div>
           <Image
             className="Figure"
-            src="/images/servicesFigure.svg"
+            src="/images/servicesFigure.png"
             alt="services background figure"
           />
         </section>
@@ -100,7 +100,7 @@ export const HomePageTemplate = ({
 }
 // Export Default HomePage for front-end
 const HomePage = ({ data: { page, services } }) => (
-  <Layout>
+  <Layout meta={page.frontmatter.meta || false}>
     <HomePageTemplate
       {...page}
       {...page.frontmatter}
@@ -118,6 +118,7 @@ export const pageQuery = graphql`
   ## query name must be unique to this file
   query HomePage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
+      ...Meta
       frontmatter {
         title
         subtitle

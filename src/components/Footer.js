@@ -68,7 +68,7 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
     </div>
     <Image
       className="Figure"
-      src="/images/footerFigure.svg"
+      src="/images/footerFigure.png"
       alt="footer background figure"
     />
   </footer>

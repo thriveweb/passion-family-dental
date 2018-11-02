@@ -6,6 +6,8 @@ import Layout from '../components/Layout'
 import Image from '../components/Image'
 import ServicesGrid from '../components/ServicesGrid'
 
+import _truncate from 'lodash/truncate'
+
 import './HomePage.css'
 
 // Export Template for use in CMS preview
@@ -18,6 +20,7 @@ export const HomePageTemplate = ({
   services,
   benefitsSection
 }) => {
+  console.log(benefitsSection.benefits)
   return (
     <main className="Home">
       <PageHeader
@@ -49,6 +52,47 @@ export const HomePageTemplate = ({
             src="/images/servicesFigure.svg"
             alt="services background figure"
           />
+        </section>
+      )}
+
+      {!!benefitsSection && (
+        <section className="Home--Benefits section">
+          <div className="container">
+            <h2>{benefitsSection.title}</h2>
+            <p className="larger">{benefitsSection.shortDescription}</p>
+            {benefitsSection.benefits &&
+              benefitsSection.benefits.length && (
+                <div className="Home--BenefitsGrid Flexbox">
+                  {benefitsSection.benefits.map((benefit, index) => {
+                    return (
+                      <div
+                        className="Home--BenefitsGridItem"
+                        key={benefit.benefit + ' ' + index}
+                      >
+                        <div>
+                          <figure>
+                            <Image
+                              background
+                              src={benefit.featuredImage}
+                              alt={benefit.benefit}
+                            />
+                          </figure>
+                        </div>
+                        <div>
+                          <span>{benefit.benefit}</span>
+                          <p>
+                            {_truncate(benefit.shortDescription, {
+                              length: 100,
+                              separator: ' '
+                            })}
+                          </p>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              )}
+          </div>
         </section>
       )}
     </main>
@@ -86,7 +130,7 @@ export const pageQuery = graphql`
         benefitsSection {
           title
           shortDescription
-          benetits {
+          benefits {
             benefit
             shortDescription
             featuredImage

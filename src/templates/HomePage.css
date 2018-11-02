@@ -24,3 +24,52 @@
   z-index: -1;
   width: 90%;
 }
+
+.Home--BenefitsGrid {
+}
+
+.Home--BenefitsGridItem {
+  width: calc(50% - 2.5rem);
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+}
+
+.Home--BenefitsGridItem > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Home--BenefitsGridItem > div:last-child {
+  padding-left: 4rem;
+}
+
+.Home--BenefitsGridItem figure {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.Home--BenefitsGridItem p {
+  display: block;
+  position: relative;
+}
+
+.Home--BenefitsGridItem span {
+  background: var(--green);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  color: var(--white);
+  font-family: var(--font-secondary);
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.9rem;
+  width: 20rem;
+  margin-bottom: 2rem;
+}

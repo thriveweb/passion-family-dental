@@ -58,7 +58,7 @@ collections: # A list of collections the CMS should be able to edit
                   widget: text,
                 }
               - label: 'Benefits'
-                name: 'benetits'
+                name: 'benefits'
                 widget: 'list'
                 fields:
                   - { label: Benefit, name: benefit, widget: string }

@@ -27,7 +27,7 @@ export default class ServicesGrid extends React.Component {
                 key={service.slug + '-' + index}
                 title={service.title}
               >
-                <div class="GridItemHead">
+                <div className="GridItemHead">
                   <div className="ServiceIcon">
                     <div style={icon} />
                   </div>

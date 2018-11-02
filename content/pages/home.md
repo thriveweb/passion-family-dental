@@ -21,7 +21,7 @@ servicesSection:
     take control of your oral health.
   title: How we can help you
 benefitsSection:
-  benetits:
+  benefits:
     - benefit: Professional
       featuredImage: 'https://ucarecdn.com/3c271bbc-19be-4042-90b6-390066668ab2/'
       shortDescription: >-

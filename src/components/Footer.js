@@ -29,9 +29,15 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
         <div>
           <h3>Info</h3>
           <p>
-            <Link to="/about">About Us</Link>
-            <Link to="/patient-info">Patient Info</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/about" title="about us">
+              About Us
+            </Link>
+            <Link to="/patient-info" title="patient info">
+              Patient Info
+            </Link>
+            <Link to="/contact" title="contact">
+              Contact
+            </Link>
           </p>
         </div>
       </div>
@@ -47,13 +53,13 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
         </div>
         <div>
           <p>
-            <Link className="Link" to="/faq">
+            <Link className="Link" to="/faq" title="FAQ">
               FAQ
             </Link>
-            <Link className="Link" to="/privacy">
+            <Link className="Link" to="/privacy" title="Privacy">
               Privacy
             </Link>
-            <Link className="Link" to="/disclaimer">
+            <Link className="Link" to="/disclaimer" title="Disclaimer">
               Disclaimer
             </Link>
           </p>

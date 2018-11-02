@@ -1,0 +1,46 @@
+.Services--Grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Services--Grid .GridItem {
+  height: 20rem;
+  width: 35rem;
+  background: var(--white);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: 0.3s ease all;
+}
+
+.Services--Grid .GridItem:not(:nth-child(-n + 3)) {
+  margin-top: 5rem;
+}
+
+.GridItemHead {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Services--Grid .GridItem:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.Services--Grid .GridItem:hover .ServiceIcon {
+  background: var(--white);
+}
+
+.Services--Grid .GridItem:hover .ServiceIcon > div {
+  background: var(--blue);
+}
+
+.Services--Grid .GridItem h3 {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}

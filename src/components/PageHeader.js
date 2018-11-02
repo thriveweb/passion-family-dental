@@ -32,7 +32,11 @@ const PageHeader = ({
           <Content className="PageHeader--Subtitle" src={subtitle} />
         )}
         {!!button && (
-          <Link to={button.link} className="PageHeader--Button Button Blue">
+          <Link
+            to={button.link}
+            title={button.label}
+            className="PageHeader--Button Button Blue"
+          >
             {button.label}
           </Link>
         )}

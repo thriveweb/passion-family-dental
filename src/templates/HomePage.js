@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
+import ServicesGrid from '../components/ServicesGrid'
 import './HomePage.css'
 
 // Export Template for use in CMS preview
@@ -12,36 +13,48 @@ export const HomePageTemplate = ({
   featuredImage,
   description,
   servicesSection,
+  services,
   benefitsSection
-}) => (
-  <main className="Home">
-    <PageHeader
-      large
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-      button={{ link: '/contact', label: 'Contact us' }}
-    />
+}) => {
+  return (
+    <main className="Home">
+      <PageHeader
+        large
+        title={title}
+        subtitle={subtitle}
+        backgroundImage={featuredImage}
+        button={{ link: '/contact', label: 'Contact us' }}
+      />
 
-    <section className="Home--QuoteSection section">
-      <div className="container">
-        <p className="quote">{description}</p>
-        <a href="tel:" className="Button">
-          Call us
-        </a>
-      </div>
-    </section>
+      <section className="Home--QuoteSection section">
+        <div className="container">
+          <p className="larger">{description}</p>
+          <a href="tel:" className="Button">
+            Call us
+          </a>
+        </div>
+      </section>
 
-    <section className="Home--Services section">
-      <div className="container" />
-    </section>
-  </main>
-)
-
+      {!!servicesSection && (
+        <section className="Home--Services section">
+          <div className="container">
+            <h2>{servicesSection.title}</h2>
+            <p className="larger">{servicesSection.shortDescription}</p>
+            {!!services && <ServicesGrid services={services} />}
+          </div>
+        </section>
+      )}
+    </main>
+  )
+}
 // Export Default HomePage for front-end
-const HomePage = ({ data: { page } }) => (
+const HomePage = ({ data: { page, services } }) => (
   <Layout>
-    <HomePageTemplate {...page} {...page.frontmatter} body={page.html} />
+    <HomePageTemplate
+      {...page}
+      {...page.frontmatter}
+      services={{ ...services }}
+    />
   </Layout>
 )
 
@@ -70,6 +83,21 @@ export const pageQuery = graphql`
             benefit
             shortDescription
             featuredImage
+          }
+        }
+      }
+    }
+    services: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "services" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            shortDescription
           }
         }
       }

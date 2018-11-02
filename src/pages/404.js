@@ -30,7 +30,9 @@ export default ({ children }) => (
               We can't find the page you are looking for!
               <br />
               Head back to{' '}
-              <Link to="/">{_get(data, 'globalSettings.siteTitle')}</Link>
+              <Link to="/" title="Home page">
+                {_get(data, 'globalSettings.siteTitle')}
+              </Link>
             </p>
           </div>
         </section>

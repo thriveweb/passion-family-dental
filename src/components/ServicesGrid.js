@@ -17,8 +17,8 @@ export default class ServicesGrid extends React.Component {
               ...item.node.frontmatter
             }
             const icon = {
-              maskImage: 'url(/images/icons/childrenDentistIcon.svg',
-              WebkitMaskImage: 'url(/images/icons/childrenDentistIcon.svg)'
+              maskImage: `url(${service.icon})`,
+              WebkitMaskImage: `url(${service.icon})`
             }
             return (
               <Link

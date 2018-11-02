@@ -94,21 +94,21 @@ export const pageQuery = graphql`
         }
       }
     }
+    services: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "services" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            icon
+            shortDescription
+          }
+        }
+      }
+    }
   }
 `
-
-// services: allMarkdownRemark(
-//   filter: { fields: { contentType: { eq: "services" } } }
-// ) {
-//   edges {
-//     node {
-//       fields {
-//         slug
-//       }
-//       frontmatter {
-//         title
-//         shortDescription
-//       }
-//     }
-//   }
-// }

@@ -105,69 +105,70 @@ export const SinglePostTemplate = ({
 
 // Export Default SinglePost for front-end
 const SinglePost = ({ data, pageContext }) => {
-  const { post, allPosts } = data
-  const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
-  return (
-    <Layout>
-      <SinglePostTemplate
-        {...post}
-        {...post.frontmatter}
-        body={post.html}
-        nextPostURL={_get(thisEdge, 'next.fields.slug')}
-        prevPostURL={_get(thisEdge, 'previous.fields.slug')}
-      />
-    </Layout>
-  )
+  return ''
+  // const { post, allPosts } = data
+  // const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
+  // return (
+  //   <Layout>
+  //     <SinglePostTemplate
+  //       {...post}
+  //       {...post.frontmatter}
+  //       body={post.html}
+  //       nextPostURL={_get(thisEdge, 'next.fields.slug')}
+  //       prevPostURL={_get(thisEdge, 'previous.fields.slug')}
+  //     />
+  //   </Layout>
+  // )
 }
 
 export default SinglePost
 
-export const pageQuery = graphql`
-  ## Query for SinglePost data
-  ## Use GraphiQL interface (http://localhost:8000/___graphql)
-  ## $id is processed via gatsby-node.js
-  ## query name must be unique to this file
-  query SinglePost($id: String!) {
-    post: markdownRemark(id: { eq: $id }) {
-      id
-      frontmatter {
-        title
-        template
-        featuredImage
-        quote
-        shortDescription
-        serviceBlocks {
-          content
-          title
-        }
-        documents
-      }
-    }
-
-    allPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
-    ) {
-      edges {
-        node {
-          id
-        }
-        next {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
-        previous {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   ## Query for SinglePost data
+//   ## Use GraphiQL interface (http://localhost:8000/___graphql)
+//   ## $id is processed via gatsby-node.js
+//   ## query name must be unique to this file
+//   query SinglePost($id: String!) {
+//     post: markdownRemark(id: { eq: $id }) {
+//       id
+//       frontmatter {
+//         title
+//         template
+//         featuredImage
+//         quote
+//         shortDescription
+//         serviceBlocks {
+//           content
+//           title
+//         }
+//         documents
+//       }
+//     }
+//
+//     allPosts: allMarkdownRemark(
+//       filter: { fields: { contentType: { eq: "posts" } } }
+//     ) {
+//       edges {
+//         node {
+//           id
+//         }
+//         next {
+//           fields {
+//             slug
+//           }
+//           frontmatter {
+//             title
+//           }
+//         }
+//         previous {
+//           fields {
+//             slug
+//           }
+//           frontmatter {
+//             title
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

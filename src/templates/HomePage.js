@@ -5,6 +5,7 @@ import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 import Image from '../components/Image'
 import ServicesGrid from '../components/ServicesGrid'
+import FooterSection from '../components/FooterSection'
 
 import _truncate from 'lodash/truncate'
 
@@ -49,7 +50,7 @@ export const HomePageTemplate = ({
           </div>
           <Image
             className="Figure"
-            src="/images/servicesFigure.png"
+            src="/images/servicesFigure.svg"
             alt="services background figure"
           />
         </section>
@@ -95,6 +96,8 @@ export const HomePageTemplate = ({
           </div>
         </section>
       )}
+
+      <FooterSection />
     </main>
   )
 }

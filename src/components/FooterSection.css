@@ -1,0 +1,37 @@
+.Footer--Section {
+  position: relative;
+  background: var(--pinkish);
+  color: var(--white);
+  margin-top: 35rem;
+  padding-top: 0;
+  padding-bottom: 12.5rem;
+}
+
+.Footer--Section .Figure {
+  bottom: calc(100% - 1px);
+  width: 100%;
+}
+
+.Footer--Section h2 {
+  position: relative;
+  text-align: left;
+}
+
+.Footer--Section h2::after {
+  background: var(--white);
+  left: 0;
+  transform: none;
+}
+
+.Footer--Section .Flexbox > div {
+  width: 50%;
+}
+
+.Footer--Section .Flexbox > div:last-of-type {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Footer--Section .Flexbox > div:last-of-type a {
+  margin-left: 2rem;
+}

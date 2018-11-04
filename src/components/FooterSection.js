@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Image from './Image'
 
@@ -65,7 +65,7 @@ export default ({ children, meta }) => {
 
               <Image
                 className="Figure"
-                src="/images/footerSectionFigure.svg"
+                src="/images/footerSectionFigure.png"
                 alt="footet section background figure"
               />
             </section>

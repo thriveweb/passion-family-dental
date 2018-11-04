@@ -146,7 +146,6 @@ blockquote {
 
 main {
   margin: 0 auto;
-  max-width: 1440px;
   background: var(--white);
   overflow-x: hidden;
 }

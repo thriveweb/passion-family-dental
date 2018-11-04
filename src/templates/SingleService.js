@@ -1,13 +1,15 @@
 import React, { Fragment } from 'react'
+// import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
-import _get from 'lodash/get'
+// import _get from 'lodash/get'
 import _format from 'date-fns/format'
-import { Link, graphql } from 'gatsby'
+import { Link } from 'gatsby'
+// import { Link, graphql } from 'gatsby'
 import { ChevronLeft } from 'react-feather'
 
 import Content from '../components/Content'
 import Image from '../components/Image'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 
 export const SinglePostTemplate = ({
   title,

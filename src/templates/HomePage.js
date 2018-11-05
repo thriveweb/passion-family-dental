@@ -147,14 +147,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            icon
-            shortDescription
-          }
+          ...Services
         }
       }
     }

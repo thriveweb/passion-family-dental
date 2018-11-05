@@ -7,6 +7,8 @@ import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 import Image from '../components/Image'
 import Slider from 'react-slick'
+import ServicesGrid from '../components/ServicesGrid'
+import FooterSection from '../components/FooterSection'
 
 import './AboutPage.css'
 
@@ -18,7 +20,8 @@ export const AboutPageTemplate = ({
   quote,
   content,
   sliderImages,
-  teamMembers
+  teamMembers,
+  services
 }) => (
   <main className="About">
     <Helmet>
@@ -99,12 +102,32 @@ export const AboutPageTemplate = ({
         </div>
       </section>
     )}
+
+    {!!services && (
+      <section className="Home--Services section">
+        <div className="container">
+          <h2>How can we help you:</h2>
+          <ServicesGrid services={services} />
+        </div>
+        <Image
+          className="Figure"
+          src="/images/servicesFigure.svg"
+          alt="services background figure"
+        />
+      </section>
+    )}
+
+    <FooterSection />
   </main>
 )
 
-const AboutPage = ({ data: { page } }) => (
+const AboutPage = ({ data: { page, services } }) => (
   <Layout meta={page.frontmatter.meta || false}>
-    <AboutPageTemplate {...page} {...page.frontmatter} />
+    <AboutPageTemplate
+      {...page}
+      {...page.frontmatter}
+      services={{ ...services }}
+    />
   </Layout>
 )
 
@@ -125,6 +148,15 @@ export const pageQuery = graphql`
           name
           description
           photo
+        }
+      }
+    }
+    services: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "services" } } }
+    ) {
+      edges {
+        node {
+          ...Services
         }
       }
     }

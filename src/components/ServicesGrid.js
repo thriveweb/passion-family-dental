@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import _truncate from 'lodash/truncate'
 
@@ -49,3 +50,16 @@ export default class ServicesGrid extends React.Component {
     return ''
   }
 }
+
+export const query = graphql`
+  fragment Services on MarkdownRemark {
+    fields {
+      slug
+    }
+    frontmatter {
+      title
+      icon
+      shortDescription
+    }
+  }
+`

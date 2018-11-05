@@ -25,7 +25,6 @@ export const AboutPageTemplate = ({
 }) => (
   <main className="About">
     <Helmet>
-      <title>{title}</title>
       <link
         rel="stylesheet"
         type="text/css"
@@ -122,7 +121,10 @@ export const AboutPageTemplate = ({
 )
 
 const AboutPage = ({ data: { page, services } }) => (
-  <Layout meta={page.frontmatter.meta || false}>
+  <Layout
+    meta={page.frontmatter.meta || false}
+    title={page.frontmatter.title || false}
+  >
     <AboutPageTemplate
       {...page}
       {...page.frontmatter}

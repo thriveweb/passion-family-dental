@@ -14,10 +14,6 @@ export const DefaultPageTemplate = ({
   body
 }) => (
   <main className="DefaultPage">
-    <Helmet>
-      <title>{title}</title>
-    </Helmet>
-
     <PageHeader
       title={title}
       subtitle={subtitle}
@@ -33,7 +29,10 @@ export const DefaultPageTemplate = ({
 )
 
 const DefaultPage = ({ data: { page } }) => (
-  <Layout meta={page.frontmatter.meta || false}>
+  <Layout
+    meta={page.frontmatter.meta || false}
+    title={page.frontmatter.title || false}
+  >
     <DefaultPageTemplate {...page.frontmatter} body={page.html} />
   </Layout>
 )

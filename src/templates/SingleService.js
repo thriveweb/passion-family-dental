@@ -111,7 +111,7 @@ const SinglePost = ({ data, pageContext }) => {
   // const { post, allPosts } = data
   // const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
   // return (
-  //   <Layout>
+  //   <Layout meta={page.frontmatter.meta || false}>
   //     <SinglePostTemplate
   //       {...post}
   //       {...post.frontmatter}
@@ -133,6 +133,7 @@ export default SinglePost
 //   query SinglePost($id: String!) {
 //     post: markdownRemark(id: { eq: $id }) {
 //       id
+//       ...Meta
 //       frontmatter {
 //         title
 //         template

@@ -80,7 +80,7 @@ export const HomePageTemplate = ({
                           </figure>
                         </div>
                         <div>
-                          <span>{benefit.benefit}</span>
+                          <h3 className="colored">{benefit.benefit}</h3>
                           <p>
                             {_truncate(benefit.shortDescription, {
                               length: 100,

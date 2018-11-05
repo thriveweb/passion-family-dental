@@ -4,7 +4,7 @@ import Image from './Image'
 
 import './FooterSection.css'
 
-export default ({ children, meta }) => {
+export default () => {
   return (
     <StaticQuery
       query={graphql`

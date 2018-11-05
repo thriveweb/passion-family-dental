@@ -109,6 +109,19 @@ h3 {
   margin-bottom: 3rem;
 }
 
+h3.colored {
+  background: var(--green);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  color: var(--white);
+  font-family: var(--font-secondary);
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.9rem;
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
 pre {
   background: var(--grey);
   line-height: 1.45;

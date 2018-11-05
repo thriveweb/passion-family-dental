@@ -1,2 +1,117 @@
-.About {
+.About--SliderWrap {
+  position: relative;
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 1150px;
+}
+
+.About--Slider .slick-slider {
+  position: relative;
+  width: 100%;
+  background: var(--white);
+}
+
+.About--Slider .slick-list {
+  overflow: visible;
+  z-index: 1;
+}
+
+.About--Slider .slick-slide {
+  position: relative;
+  height: 50vw;
+  width: 80vw;
+  max-width: 1150px;
+  max-height: 60rem;
+}
+
+.About--Slider .slick-slide {
+  transition: 0.3s ease all;
+  opacity: 0.25;
+}
+
+.About--Slider .slick-current {
+  transition: 0.3s ease all;
+  opacity: 1;
+}
+
+.About--Slider .slick-arrow {
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.About--Slider .slick-arrow::after,
+.About--Slider .slick-arrow::before {
+  content: '';
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.About--Slider .slick-arrow.slick-prev {
+  left: -21px;
+  border-right: 3rem solid transparent;
+  border-bottom: 10rem solid transparent;
+  border-left: 7rem solid var(--blue);
+}
+
+.About--Slider .slick-arrow.slick-prev::after {
+  border-left: 3px solid var(--white);
+  border-bottom: 3px solid var(--white);
+  top: 5rem;
+  left: -2.25rem;
+}
+
+.About--Slider .slick-arrow.slick-next {
+  right: -21px;
+  border-left: 3rem solid transparent;
+  border-top: 10rem solid transparent;
+  border-right: 7rem solid var(--blue);
+}
+
+.About--Slider .slick-arrow.slick-next::after {
+  border-top: 3px solid var(--white);
+  border-right: 3px solid var(--white);
+  top: -5rem;
+  left: 2.25rem;
+}
+
+.About-TeamMember {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+}
+
+.About-TeamMember:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.About-TeamMember > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.About-TeamMember > div:last-child {
+  padding: 0 4rem;
+}
+
+.About-TeamMember figure {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  width: 30rem;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.About-TeamMember p {
+  display: block;
+  position: relative;
 }

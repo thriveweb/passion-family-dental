@@ -71,7 +71,7 @@ export const ContactPageTemplate = ({
 )
 
 const ContactPage = ({ data: { page } }) => (
-  <Layout>
+  <Layout meta={page.frontmatter.meta || false}>
     <ContactPageTemplate {...page.frontmatter} body={page.html} />
   </Layout>
 )
@@ -82,6 +82,7 @@ export const pageQuery = graphql`
   query ContactPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       html
+      ...Meta
       frontmatter {
         title
         template

@@ -34,7 +34,8 @@
     "react-dom": "^16.5.2",
     "react-feather": "^1.1.4",
     "react-helmet": "^5.2.0",
-    "react-markdown": "^4.0.3"
+    "react-markdown": "^4.0.3",
+    "react-slick": "^0.23.2"
   },
   "keywords": [
     "gatsby"

@@ -21,7 +21,6 @@ export const HomePageTemplate = ({
   services,
   benefitsSection
 }) => {
-  console.log(benefitsSection.benefits)
   return (
     <main className="Home">
       <PageHeader

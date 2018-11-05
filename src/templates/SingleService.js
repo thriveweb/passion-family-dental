@@ -1,19 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Image from '../components/Image'
+import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 
 export const SingleServiceTemplate = ({ title, featuredImage }) => (
-  <main>
-    {featuredImage && (
-      <Image
-        background
-        className="SingleService--BackgroundImage"
-        src={featuredImage}
-        alt={title}
-      />
-    )}
+  <main className="Service">
+    <PageHeader title={title} backgroundImage={featuredImage} />
+
+    <section />
   </main>
 )
 
@@ -42,6 +37,13 @@ export const pageQuery = graphql`
       ...Meta
       frontmatter {
         title
+        featuredImage
+        quote
+        shortDescription
+        serviceBlocks {
+          content
+        }
+        documents
       }
     }
   }

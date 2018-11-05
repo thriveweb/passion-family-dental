@@ -21,10 +21,6 @@
   flex-direction: row;
 }
 
-.Nav--Links > * + * {
-  margin-left: 1rem;
-}
-
 .Nav .Logo {
   margin-right: 3rem;
   position: relative;
@@ -38,7 +34,7 @@
 }
 
 .NavLink {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   display: block;
   font-weight: 500;
   transition: color 0.2s, border-bottom-color 0.2s;
@@ -60,6 +56,48 @@
 .Nav--Links .Nav--MenuButton {
   display: inline-block;
   margin-left: 2rem;
+}
+
+.NavLinkGroup {
+  position: relative;
+}
+
+.NavLinkGroup .NavLink svg {
+  margin-left: 0.5rem;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.SubNav {
+  position: absolute;
+  top: calc(100% + 25px);
+  background: var(--white);
+  width: 100%;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+  opacity: 0;
+  display: none;
+  overflow: hidden;
+  transition: 0.3s ease-in-out all;
+}
+
+.SubNav.active {
+  display: block;
+  opacity: 1;
+}
+
+.SubNav .NavLink {
+  font-family: var(--font-primary);
+  transition: 0.3s ease all;
+  border: none;
+  padding: 0.75rem 2rem;
+}
+
+.SubNav .NavLink:hover,
+.SubNav .NavLink.active {
+  background: var(--orange);
+  color: var(--white);
 }
 
 @media (max-width: 600px) {

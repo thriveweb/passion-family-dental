@@ -1,13 +1,19 @@
 import React, { Component } from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import { Link } from 'gatsby'
-import { Menu, X } from 'react-feather'
+import { Menu, X, ChevronDown } from 'react-feather'
+
+import _get from 'lodash/get'
+// import _kebabCase from 'lodash/kebabCase'
 
 import Logo from './Logo'
 import './Nav.css'
 
 export default class Nav extends Component {
   state = {
-    active: false
+    active: false,
+    activeItem: false,
+    activeSubnav: false
   }
 
   handleMenuToggle = () => this.setState({ active: !this.state.active })
@@ -15,18 +21,104 @@ export default class Nav extends Component {
   // Only close nav if it is open
   handleLinkClick = () => this.state.active && this.handleMenuToggle()
 
+  toggleSubnav = () =>
+    this.setState({
+      activeSubnav: !this.state.activeSubnav
+    })
+
   render() {
     const { active } = this.state
 
-    const NavLink = ({ className, children, ...props }) => (
-      <Link
-        {...props}
-        className={`NavLink ${className || ''}`}
-        onClick={this.handleLinkClick}
-        title={children}
+    const NavLink = ({ className, children, ...props }) => {
+      return (
+        <Link
+          {...props}
+          className={`NavLink ${className || ''}`}
+          onClick={this.handleLinkClick}
+          title={children}
+          activeClassName="active"
+        >
+          {children}
+        </Link>
+      )
+    }
+
+    const NavLinkGroup = ({ children, to, title, contentType, ...props }) => (
+      <div
+        className={`NavLinkGroup ${this.state.activeSubnav ? 'active' : ''}`}
       >
-        {children}
-      </Link>
+        {(() => {
+          if (to) {
+            return (
+              <NavLink to={to} {...props} onClick={this.toggleSubnav}>
+                {children}
+              </NavLink>
+            )
+          }
+          return (
+            <span className={`NavLink`} {...props} onClick={this.toggleSubnav}>
+              {children}
+              <ChevronDown />
+            </span>
+          )
+        })()}
+        <NavLinkGroupItems contentType={contentType} />
+      </div>
+    )
+
+    const NavLinkGroupItems = ({ contentType }) => (
+      <StaticQuery
+        query={graphql`
+          query {
+            allPages: allMarkdownRemark {
+              edges {
+                node {
+                  fields {
+                    slug
+                    contentType
+                  }
+                  frontmatter {
+                    title
+                    icon
+                  }
+                }
+              }
+            }
+          }
+        `}
+        render={data => {
+          const { allPages } = data
+
+          const getChildPages = parentSlug =>
+            allPages.edges.filter(
+              page =>
+                _get(page, 'node.fields.contentType', '').indexOf(
+                  parentSlug
+                ) === 0
+            )
+
+          return (
+            <div
+              className={`SubNav ${this.state.activeSubnav ? 'active' : ''}`}
+            >
+              {!!getChildPages &&
+                getChildPages(contentType).map(page => {
+                  page = { ...page.node }
+                  return (
+                    <NavLink
+                      onClick={this.toggleActive}
+                      key={page.fields.slug}
+                      to={page.fields.slug}
+                      exact={true.toString()}
+                    >
+                      {page.frontmatter.title}
+                    </NavLink>
+                  )
+                })}
+            </div>
+          )
+        }}
+      />
     )
 
     return (
@@ -36,19 +128,16 @@ export default class Nav extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
-            <NavLink to="/" exact="true">
+            <NavLink to="/" exact={true.toString()}>
               Home
             </NavLink>
-            <NavLink to="/about/" exact="true">
+            <NavLink to="/about/" exact={true.toString()}>
               About
             </NavLink>
-            <NavLink to="/blog/" exact="true">
-              Blog
-            </NavLink>
-            <NavLink to="/default/" exact="true">
-              Default
-            </NavLink>
-            <NavLink to="/contact/" exact="true">
+            <NavLinkGroup exact={true.toString()} contentType="services">
+              Dental Services
+            </NavLinkGroup>
+            <NavLink to="/contact/" exact={true.toString()}>
               Contact
             </NavLink>
             <button className="Nav--MenuButton Button Icon">

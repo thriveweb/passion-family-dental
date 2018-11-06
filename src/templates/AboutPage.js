@@ -20,7 +20,8 @@ export const AboutPageTemplate = ({
   content,
   sliderImages,
   teamMembers,
-  services
+  services,
+  isPreview = false
 }) => (
   <main className="About">
     <Helmet>
@@ -36,6 +37,7 @@ export const AboutPageTemplate = ({
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
     </Helmet>
+
     <PageHeader title={title} backgroundImage={featuredImage} />
 
     <section className="About--ContentSection section">
@@ -48,35 +50,39 @@ export const AboutPageTemplate = ({
       </div>
     </section>
 
-    <section className="About--Slider section">
-      <div className="About--SliderWrap">
-        <Slider
-          {...{
-            draggable: true,
-            slide: 'About--SliderImage',
-            arrows: true,
-            focusOnSelect: true,
-            centerMode: true,
-            autoplay: true,
-            autoplaySpeed: 3000
-          }}
-        >
-          {!!sliderImages &&
-            sliderImages.length &&
-            sliderImages.map((image, index) => {
-              return (
-                <Image
-                  className="About--SliderImage"
-                  key={'About--SliderImage' + index}
-                  src={image}
-                  background
-                  alt={'About--SliderImage' + index}
-                />
-              )
-            })}
-        </Slider>
-      </div>
-    </section>
+    {!isPreview && (
+      <section className="About--Slider section">
+        <div className="About--SliderWrap">
+          {!!Slider && (
+            <Slider
+              {...{
+                draggable: true,
+                slide: 'About--SliderImage',
+                arrows: true,
+                focusOnSelect: true,
+                centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 3000
+              }}
+            >
+              {!!sliderImages &&
+                sliderImages.length &&
+                sliderImages.map((image, index) => {
+                  return (
+                    <Image
+                      className="About--SliderImage"
+                      key={'About--SliderImage' + index}
+                      src={image}
+                      background
+                      alt={'About--SliderImage' + index}
+                    />
+                  )
+                })}
+            </Slider>
+          )}
+        </div>
+      </section>
+    )}
 
     {!!teamMembers && (
       <section className="About--TeamSection section">
@@ -84,7 +90,10 @@ export const AboutPageTemplate = ({
           <h2>Our team</h2>
           <div className="About--Team">
             {teamMembers.map((member, index) => (
-              <div className="About-TeamMember">
+              <div
+                className="About-TeamMember"
+                key={'About-TeamMember-' + index}
+              >
                 <div>
                   <figure>
                     <Image background src={member.photo} alt={member.name} />
@@ -114,7 +123,6 @@ export const AboutPageTemplate = ({
         />
       </section>
     )}
-
     <FooterSection />
   </main>
 )

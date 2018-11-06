@@ -25,6 +25,82 @@
   color: var(--orange);
 }
 
+.Contact--top {
+  padding-bottom: 5rem;
+}
+
+.Contact--top .larger {
+  font-size: 3.2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.Contact--top .ServiceIcon {
+  background: transparent;
+}
+
+.Contact--top .ServiceIcon > div {
+  background: var(--pinkish);
+}
+
+.Contact--top a {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.Contact--top > div {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.Contact--contentWrap {
+  padding-right: 10rem;
+  font-size: 2rem;
+}
+
+.Contact--contentWrap strong {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.Contact--contentWrap p {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.Contact--contentWrap a {
+  color: var(--green);
+}
+
+.Contact--contentWrap img {
+  width: auto;
+  max-width: 100%;
+}
+
+.Contact--contentWrap hr {
+  display: none;
+}
+
+.Contact--contentWrap .Content {
+  margin-bottom: 4rem;
+}
+
+.Contact .Form {
+  background: var(--grey);
+  border-radius: 2rem;
+  padding: 5rem;
+  margin: 0;
+}
+
+.Contact .Form .Button {
+  width: 100%;
+}
+
 @media (min-width: 750px) {
   .Contact--Section1--Container {
     display: flex;

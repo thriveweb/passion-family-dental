@@ -1,68 +1,79 @@
 import React from 'react'
-import { MapPin, Smartphone, Mail } from 'react-feather'
 import { graphql } from 'gatsby'
+import _camelCase from 'lodash/camelCase'
 
 import PageHeader from '../components/PageHeader'
-import FormSimpleAjax from '../components/FormSimpleAjax'
 import Content from '../components/Content'
-import GoogleMap from '../components/GoogleMap'
+import Image from '../components/Image'
+import FormSimpleAjax from '../components/FormSimpleAjax'
 import Layout from '../components/Layout'
 import './ContactPage.css'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
-  body,
   title,
-  subtitle,
   featuredImage,
-  address,
+  text,
   phone,
   email,
-  locations
+  content,
+  map,
+  mapLink
 }) => (
   <main className="Contact">
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
+    <PageHeader title={title} backgroundImage={featuredImage} />
     <section className="section Contact--Section1">
-      <div className="container Contact--Section1--Container">
+      <div className="Contact--top">
+        <p className="larger">{text}</p>
         <div>
-          <Content source={body} />
-          <div className="Contact--Details">
-            {address && (
-              <a
-                className="Contact--Details--Item"
-                href={`https://www.google.com.au/maps/search/${encodeURI(
-                  address
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MapPin /> {address}
+          {(() => {
+            const icon = {
+              maskImage: `url(/images/icons/phoneIcon.svg)`,
+              WebkitMaskImage: `url(/images/icons/phoneIcon.svg)`
+            }
+            return (
+              <a href={`tel:${_camelCase(phone)}`} title="Give us a call">
+                <div className="ServiceIcon">
+                  <div style={icon} />
+                </div>
+                {phone}
               </a>
-            )}
-            {phone && (
-              <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                <Smartphone /> {phone}
+            )
+          })()}
+          {(() => {
+            const icon = {
+              maskImage: `url(/images/icons/emailIcon.svg)`,
+              WebkitMaskImage: `url(/images/icons/emailIcon.svg)`
+            }
+            return (
+              <a href={`mailto:${email}`} title="Send a email">
+                <div className="ServiceIcon">
+                  <div style={icon} />
+                </div>
+                {email}
               </a>
-            )}
-            {email && (
-              <a className="Contact--Details--Item" href={`mailto:${email}`}>
-                <Mail /> {email}
-              </a>
-            )}
-          </div>
+            )
+          })()}
         </div>
-
+      </div>
+      <div className="container Contact--Section1--Container">
+        <div className="Contact--contentWrap">
+          <Content source={content} />
+          <a
+            href={mapLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Find us on google maps"
+          >
+            <Image src={map} alt="location map" />
+            Get directions
+          </a>
+        </div>
         <div>
           <FormSimpleAjax name="Simple Form Ajax" />
         </div>
       </div>
     </section>
-
-    <GoogleMap locations={locations} />
   </main>
 )
 
@@ -85,16 +96,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         template
-        subtitle
         featuredImage
-        address
+        content
         phone
         email
-        locations {
-          mapLink
-          lat
-          lng
-        }
+        text
+        map
+        mapLink
       }
     }
   }

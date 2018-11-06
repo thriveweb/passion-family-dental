@@ -181,6 +181,12 @@ collections: # A list of collections the CMS should be able to edit
               buttons: { bulleted-list, bold, italic },
             }
           - { label: Map, name: map, widget: image }
+          - {
+              label: Map Link,
+              name: mapLink,
+              widget: string,
+              hint: 'get share link from google maps',
+            }
           - label: 'Meta'
             required: false
             name: 'meta'

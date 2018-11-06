@@ -86,20 +86,14 @@ class Form extends React.Component {
             required
           />
         </label>
-        <label className="Form--Label has-arrow">
-          <select
-            className="Form--Input Form--Select"
-            name="type"
-            defaultValue="Type of Enquiry"
+        <label className="Form--Label">
+          <input
+            className="Form--Input"
+            type="number"
+            placeholder="Phone"
+            name="phone"
             required
-          >
-            <option disabled hidden>
-              Type of Enquiry
-            </option>
-            <option>Need to know more</option>
-            <option>Found a bug</option>
-            <option>Want to say hello</option>
-          </select>
+          />
         </label>
         <label className="Form--Label">
           <textarea
@@ -118,12 +112,13 @@ class Form extends React.Component {
         />
         {!!subject && <input type="hidden" name="subject" value={subject} />}
         <input type="hidden" name="form-name" value={name} />
-        <input
+        <button
           className="Button Form--SubmitButton"
           type="submit"
-          value="Enquire"
           disabled={this.state.disabled}
-        />
+        >
+          Submit
+        </button>
       </form>
     )
   }

@@ -25,5 +25,5 @@ content: |-
 
   ****
 map: 'https://ucarecdn.com/b1ea238e-750c-4467-bd32-08b197e7af03/'
+mapLink: 'https://goo.gl/maps/PMswL6jRbMy'
 ---
-

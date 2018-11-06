@@ -282,8 +282,22 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: Slug, name: slug, widget: string }
       - { label: Title, name: title, widget: string }
-      - { label: Featured Image, name: featuredImage, widget: image }
-      - { label: Body, name: body, widget: markdown }
+      - {
+          label: Featured Image,
+          name: featuredImage,
+          widget: image,
+          required: false,
+        }
+      - { label: Quote, name: quote, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+      - label: Accordion
+        required: false
+        name: accordion
+        widget: list
+        fields:
+          - { label: title, name: title, widget: string }
+          - { label: text, name: text, widget: text }
+
       - label: 'Meta'
         required: false
         name: 'meta'

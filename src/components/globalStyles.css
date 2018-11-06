@@ -412,3 +412,20 @@ main {
   transform: translate(-50%, -50%);
   transition: 0.3s ease all;
 }
+
+.SideCircleBlue {
+  position: relative;
+  z-index: 1;
+}
+
+.SideCircleBlue::after {
+  content: '';
+  position: absolute;
+  right: -25rem;
+  bottom: -20rem;
+  width: 40rem;
+  height: 40rem;
+  background: var(--blue);
+  border-radius: 50%;
+  z-index: -1;
+}

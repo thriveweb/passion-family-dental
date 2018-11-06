@@ -25,7 +25,7 @@ export const DefaultPageTemplate = ({
       backgroundImage={featuredImage}
     />
 
-    <section className="section">
+    <section className="section SideCircleBlue">
       <div className="container">
         {!!quote && <p class="larger">{quote}</p>}
         {!!body && <Content source={body} />}

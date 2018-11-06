@@ -19,71 +19,77 @@ export const SingleServiceTemplate = ({
 }) => (
   <main className="Service">
     <PageHeader title={title} backgroundImage={featuredImage} />
-    <div className="container Flexbox">
-      <div>
-        <aside className="Service--ServicesList">
-          <h4>Other Services</h4>
-          {!!services &&
-            services.map((service, i) => {
-              const icon = {
-                maskImage: `url(${service.node.frontmatter.icon})`,
-                WebkitMaskImage: `url(${service.node.frontmatter.icon})`
-              }
-              return (
-                <Link
-                  to={service.node.fields.slug}
-                  key={'service-' + i}
-                  className="FlexBox"
+    <div className="SideCircleBlue">
+      <div className="container Flexbox">
+        <div>
+          <aside className="Service--ServicesList">
+            <h4>Other Services</h4>
+            {!!services &&
+              services.map((service, i) => {
+                const icon = {
+                  maskImage: `url(${service.node.frontmatter.icon})`,
+                  WebkitMaskImage: `url(${service.node.frontmatter.icon})`
+                }
+                return (
+                  <Link
+                    to={service.node.fields.slug}
+                    key={'service-' + i}
+                    className="FlexBox"
+                  >
+                    <div className="ServiceIcon">
+                      <div style={icon} />
+                    </div>
+                    <span>{service.node.frontmatter.title}</span>
+                  </Link>
+                )
+              })}
+            {!!documents && (
+              <div>
+                <h5>{documents[0].name}</h5>
+                <a
+                  href={documents[0].file}
+                  download={documents[0].file}
+                  className="Button"
+                >
+                  download form
+                </a>
+              </div>
+            )}
+          </aside>
+        </div>
+        <section className="Service--Content section">
+          <p className="larger">{quote}</p>
+          <p>{shortDescription}</p>
+          {!!serviceBlocks &&
+            serviceBlocks.map((item, i) => (
+              <div key={'singel-service-content-block-' + i}>
+                <h3 className="colored">{item.title}</h3>
+                <p>{item.content}</p>
+              </div>
+            ))}
+          {!!documents && (
+            <div className="Service--ContentFoot">
+              {documents.map((doc, i) => (
+                <a
+                  key={'download-link-' + i}
+                  href={doc.file}
+                  download={doc.file}
                 >
                   <div className="ServiceIcon">
-                    <div style={icon} />
+                    <div
+                      style={{
+                        maskImage: `url(/images/icons/downloadIcon.svg)`,
+                        WebkitMaskImage: `url(/images/icons/downloadIcon.svg)`
+                      }}
+                    />
                   </div>
-                  <span>{service.node.frontmatter.title}</span>
-                </Link>
-              )
-            })}
-          {!!documents && (
-            <div>
-              <h5>{documents[0].name}</h5>
-              <a
-                href={documents[0].file}
-                download={documents[0].file}
-                className="Button"
-              >
-                download form
-              </a>
+                  {doc.name}
+                </a>
+              ))}
             </div>
           )}
-        </aside>
+        </section>
       </div>
-      <section className="Service--Content section">
-        <p className="larger">{quote}</p>
-        <p>{shortDescription}</p>
-        {!!serviceBlocks &&
-          serviceBlocks.map((item, i) => (
-            <div key={'singel-service-content-block-' + i}>
-              <h3 className="colored">{item.title}</h3>
-              <p>{item.content}</p>
-            </div>
-          ))}
-        {!!documents && (
-          <div className="Service--ContentFoot">
-            {documents.map((doc, i) => (
-              <a key={'download-link-' + i} href={doc.file} download={doc.file}>
-                <div className="ServiceIcon">
-                  <div
-                    style={{
-                      maskImage: `url(/images/icons/downloadIcon.svg)`,
-                      WebkitMaskImage: `url(/images/icons/downloadIcon.svg)`
-                    }}
-                  />
-                </div>
-                {doc.name}
-              </a>
-            ))}
-          </div>
-        )}
-      </section>
     </div>
     <FooterSection />
   </main>

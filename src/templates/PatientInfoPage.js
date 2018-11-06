@@ -23,37 +23,39 @@ export const PatientInfoPageTemplate = ({
           <p className="larger">{quote}</p>
         </div>
       </section>
-      <div className="container Flexbox">
-        <div>
-          {!!aside && (
-            <aside className="ParientInfoPage--Asside">
-              <h4>{aside.downloadTitle}</h4>
-              <a className="Button" href={aside.file} download={aside.file}>
-                download form
-              </a>
-              <hr />
-              <h4>{aside.titleFAQ}</h4>
-              <Link to="/faq" className="Button">
-                See faq
-              </Link>
-            </aside>
-          )}
-        </div>
-
-        <section className="ParientInfoPage--Content section">
-          <div className="Flexbox">
-            {!!contentBlocks &&
-              contentBlocks.map((block, i) => (
-                <div
-                  className="ParientInfoPage--contentBlock"
-                  key={'ParientInfoPage-contentBlock-' + i}
-                >
-                  <h3>{block.title}</h3>
-                  <p>{block.text}</p>
-                </div>
-              ))}
+      <div className="SideCircleBlue">
+        <div className="container Flexbox">
+          <div>
+            {!!aside && (
+              <aside className="ParientInfoPage--Asside">
+                <h4>{aside.downloadTitle}</h4>
+                <a className="Button" href={aside.file} download={aside.file}>
+                  download form
+                </a>
+                <hr />
+                <h4>{aside.titleFAQ}</h4>
+                <Link to="/faq" className="Button">
+                  See faq
+                </Link>
+              </aside>
+            )}
           </div>
-        </section>
+
+          <section className="ParientInfoPage--Content section">
+            <div className="Flexbox">
+              {!!contentBlocks &&
+                contentBlocks.map((block, i) => (
+                  <div
+                    className="ParientInfoPage--contentBlock"
+                    key={'ParientInfoPage-contentBlock-' + i}
+                  >
+                    <h3>{block.title}</h3>
+                    <p>{block.text}</p>
+                  </div>
+                ))}
+            </div>
+          </section>
+        </div>
       </div>
 
       <FooterSection />

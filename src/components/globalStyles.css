@@ -297,7 +297,7 @@ main {
   font-family: var(--font-secondary);
   letter-spacing: 0.05em;
   font-size: 1.4rem;
-  padding: 1.7rem 5rem;
+  padding: 1.5rem 5rem;
   min-width: 20rem;
   border: none;
   transition: all 0.2s ease;
@@ -315,6 +315,7 @@ main {
 .Button:focus {
   opacity: 0.95;
   outline: none;
+  color: var(--white);
 }
 .Button:hover::after,
 .Button:focus::after {

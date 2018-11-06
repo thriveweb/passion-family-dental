@@ -2,16 +2,27 @@
   position: relative;
   background-color: var(--darkGrey);
   color: var(--white);
-  padding: 15rem 0;
+  padding-top: 15rem;
+  padding-bottom: 20rem;
   clip-path: url(#headerClipPath);
   z-index: 0;
   overflow: hidden;
+}
+
+.PageHeader .container {
+  z-index: 4;
 }
 
 .PageHeader--Title {
   max-width: 60rem;
   font-weight: 500;
   line-height: 7.4rem;
+  margin: 0;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.PageHeader .larger .PageHeader--Title {
+  margin-bottom: 2.5rem;
 }
 
 .PageHeader--Subtitle {

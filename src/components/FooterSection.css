@@ -31,6 +31,8 @@
 .Footer--Section .Flexbox > div:last-of-type {
   display: flex;
   justify-content: flex-end;
+  height: 5.2rem;
+  align-self: center;
 }
 
 .Footer--Section .Flexbox > div:last-of-type a {

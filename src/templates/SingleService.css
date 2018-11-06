@@ -59,6 +59,10 @@
   background: var(--black);
 }
 
+.Service--ServicesList a:hover .ServiceIcon > div {
+  background: var(--orange);
+}
+
 .Service--ServicesList .Button {
   width: 22rem;
   display: block;

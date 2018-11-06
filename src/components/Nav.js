@@ -142,7 +142,7 @@ export default class Nav extends Component {
             <NavLink to="/contact/" exact={true.toString()}>
               Contact
             </NavLink>
-            <button className="Nav--MenuButton Button Icon">
+            <Link className="Nav--MenuButton Button Icon" to="/contact">
               <svg
                 className="icon"
                 height="16"
@@ -155,7 +155,7 @@ export default class Nav extends Component {
                 </g>
               </svg>
               Book Now
-            </button>
+            </Link>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

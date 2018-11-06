@@ -152,6 +152,59 @@ collections: # A list of collections the CMS should be able to edit
                   required: false,
                 }
 
+      - file: 'content/pages/patient-info.md'
+        label: 'Parient Info Page'
+        name: 'patient-info-page'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: PatientInfoPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'patient-info' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Images, name: featuredImage, widget: image }
+          - { label: Quote, name: quote, widget: text }
+          - label: Content
+            name: content
+            widget: list
+            fields:
+              - { label: title, name: title, widget: string }
+              - { label: text, name: text, widget: text }
+          - label: 'Aside'
+            name: 'aside'
+            widget: 'object'
+            fields:
+              - { label: download title, name: downloadTitle, widget: string }
+              - { label: File, name: file, widget: file }
+              - { label: Title FAQ, name: titleFAQ, widget: string }
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                  pattern: ['.{,300}', 'Must not exceed 300 characters'],
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+
       - file: 'content/pages/contact.md'
         label: 'Contact Page'
         name: 'contact-page'

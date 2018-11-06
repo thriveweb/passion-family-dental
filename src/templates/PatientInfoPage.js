@@ -44,20 +44,21 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       id
       ...Meta
-      frontmatter {
-        title
-        featuredImage
-        quote
-        content {
-          text
-          title
-        }
-        aside {
-          downloadTitle
-          file
-          titleFAQ
-        }
-      }
     }
   }
 `
+
+// frontmatter {
+//   title
+//   featuredImage
+//   quote
+//   content {
+//     text
+//     title
+//   }
+//   aside {
+//     downloadTitle
+//     file
+//     titleFAQ
+//   }
+// }

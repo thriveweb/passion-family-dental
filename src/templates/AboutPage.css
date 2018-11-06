@@ -1,3 +1,9 @@
+.About--ContentSection .columns {
+  margin-top: 5rem;
+  column-count: 2;
+  column-gap: 5rem;
+}
+
 .About--SliderWrap {
   position: relative;
   margin: 0 auto;
@@ -114,4 +120,11 @@
 .About-TeamMember p {
   display: block;
   position: relative;
+}
+
+.About--ContentSection .Button {
+  left: 50%;
+  margin-top: 5rem;
+  transform: translateX(-50%);
+  display: inline-block;
 }

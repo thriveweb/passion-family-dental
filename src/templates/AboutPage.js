@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
@@ -42,7 +41,7 @@ export const AboutPageTemplate = ({
     <section className="About--ContentSection section">
       <div className="container">
         <p className="larger">{quote}</p>
-        <p>{content}</p>
+        <p className="columns">{content}</p>
         <Link to="/contact" className="Button ">
           Contact us
         </Link>

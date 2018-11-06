@@ -57,7 +57,6 @@ export const SingleServiceTemplate = ({
         </aside>
       </div>
       <section className="Service--Content section">
-        <div className="container" />
         <p className="larger">{quote}</p>
         <p>{shortDescription}</p>
         {!!serviceBlocks &&

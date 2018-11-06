@@ -136,6 +136,9 @@ export default class Nav extends Component {
             <NavLinkGroup exact={true.toString()} contentType="services">
               Dental Services
             </NavLinkGroup>
+            <NavLink to="/patient-info/" exact={true.toString()}>
+              Patient Info
+            </NavLink>
             <NavLink to="/contact/" exact={true.toString()}>
               Contact
             </NavLink>

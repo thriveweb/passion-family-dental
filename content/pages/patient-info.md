@@ -6,7 +6,7 @@ featuredImage: 'https://ucarecdn.com/5fd63bbe-dbca-4aee-9da4-2bb46ccdd53f/'
 quote: >-
   Introduction goes here lorem ipsum dolor sit amet, consectetur adipiscing
   elit, sed do eiusmod.
-content:
+contentBlocks:
   - text: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -32,7 +32,7 @@ content:
       sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
       mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. 
+      magna aliqua.
     title: Claiming your health fund rebate
   - text: >-
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -46,4 +46,3 @@ aside:
   file: 'https://ucarecdn.com/b76ed7ee-c452-49ed-8ba6-b84996653550/'
   titleFAQ: You can find more information on our FAQ page
 ---
-

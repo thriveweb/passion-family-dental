@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
@@ -11,15 +11,54 @@ export const PatientInfoPageTemplate = ({
   title,
   featuredImage,
   quote,
-  content,
+  contentBlocks,
   aside
-}) => (
-  <main className="Service">
-    <PageHeader title={title} backgroundImage={featuredImage} />
+}) => {
+  console.log(contentBlocks)
+  return (
+    <main className="ParientInfoPage">
+      <PageHeader title={title} backgroundImage={featuredImage} />
+      <section className="ParientInfoPage--ContentSection section">
+        <div className="container">
+          <p className="larger">{quote}</p>
+        </div>
+      </section>
+      <div className="container Flexbox">
+        <div>
+          {!!aside && (
+            <aside className="ParientInfoPage--Asside">
+              <h4>{aside.downloadTitle}</h4>
+              <a className="Button" href={aside.file} download={aside.file}>
+                download form
+              </a>
+              <hr />
+              <h4>{aside.titleFAQ}</h4>
+              <Link to="/faq" className="Button">
+                See faq
+              </Link>
+            </aside>
+          )}
+        </div>
 
-    <FooterSection />
-  </main>
-)
+        <section className="ParientInfoPage--Content section">
+          <div className="Flexbox">
+            {!!contentBlocks &&
+              contentBlocks.map((block, i) => (
+                <div
+                  className="ParientInfoPage--contentBlock"
+                  key={'ParientInfoPage-contentBlock-' + i}
+                >
+                  <h3>{block.title}</h3>
+                  <p>{block.text}</p>
+                </div>
+              ))}
+          </div>
+        </section>
+      </div>
+      <FooterSection />
+    </main>
+  )
+}
 
 // Export Default PatientInfoPage for front-end
 const PatientInfoPage = ({ data: { page } }) => {
@@ -42,23 +81,21 @@ export const pageQuery = graphql`
   ## query name must be unique to this file
   query PatientInfoPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
-      id
       ...Meta
+      frontmatter {
+        title
+        featuredImage
+        quote
+        contentBlocks {
+          text
+          title
+        }
+        aside {
+          downloadTitle
+          file
+          titleFAQ
+        }
+      }
     }
   }
 `
-
-// frontmatter {
-//   title
-//   featuredImage
-//   quote
-//   content {
-//     text
-//     title
-//   }
-//   aside {
-//     downloadTitle
-//     file
-//     titleFAQ
-//   }
-// }

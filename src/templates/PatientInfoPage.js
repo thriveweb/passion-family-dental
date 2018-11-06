@@ -55,6 +55,7 @@ export const PatientInfoPageTemplate = ({
           </div>
         </section>
       </div>
+
       <FooterSection />
     </main>
   )

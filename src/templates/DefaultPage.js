@@ -3,14 +3,20 @@ import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
+import Accordion from '../components/Accordion'
 import Layout from '../components/Layout'
+import FooterSection from '../components/FooterSection'
+
+import './DefaultPage.css'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  body
+  body,
+  quote,
+  accordion
 }) => (
   <main className="DefaultPage">
     <PageHeader
@@ -21,9 +27,13 @@ export const DefaultPageTemplate = ({
 
     <section className="section">
       <div className="container">
-        <Content source={body} />
+        {!!quote && <p class="larger">{quote}</p>}
+        {!!body && <Content source={body} />}
+        {!!accordion && <Accordion items={accordion} />}
       </div>
     </section>
+
+    <FooterSection />
   </main>
 )
 
@@ -44,8 +54,12 @@ export const pageQuery = graphql`
       ...Meta
       frontmatter {
         title
-        subtitle
         featuredImage
+        quote
+        accordion {
+          title
+          text
+        }
       }
     }
   }

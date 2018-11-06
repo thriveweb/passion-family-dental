@@ -1,0 +1,126 @@
+.Service--ServicesList {
+  width: 40rem;
+  background: var(--grey);
+  padding: 5rem;
+  border-radius: 2rem;
+}
+
+.Service--ServicesList h4 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 5.4rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.Service--ServicesList h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 4.5rem;
+  font-weight: 300;
+  margin-top: 5rem;
+}
+
+.Service--ServicesList h4::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: var(--black);
+  opacity: 0.3;
+  display: block;
+  position: absolute;
+  top: 100%;
+}
+
+.Service--ServicesList a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Service--ServicesList a span {
+  display: inline-block;
+  font-family: var(--font-secondary);
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 3rem;
+  padding-left: 0.5rem;
+}
+
+.Service--ServicesList a .ServiceIcon {
+  background: none;
+}
+
+.Service--ServicesList a .ServiceIcon > div {
+  background: var(--black);
+}
+
+.Service--ServicesList .Button {
+  width: 22rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.Service--Content {
+  width: calc(100% - 40rem);
+  padding: 0;
+  padding-left: 7.5rem;
+}
+
+.Service--Content p.larger {
+  text-align: left;
+  margin-top: 0;
+}
+
+.Service--Content p {
+  margin-top: 2.5rem;
+}
+
+.Service--Content h3.colored {
+  width: auto;
+  display: inline-block;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+.Service--ContentFoot {
+  display: block;
+  width: 100%;
+  margin-top: 5rem;
+  border-top: 2px solid var(--grey);
+  padding: 2rem 0;
+  display: flex;
+}
+
+.Service--ContentFoot a {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-secondary);
+  transition: 0.3s ease all;
+}
+
+.Service--ContentFoot a:hover {
+  color: var(--orange);
+}
+
+.Service--ContentFoot a:not(:first-of-type) {
+  margin-left: 2rem;
+}
+
+.Service--ContentFoot .ServiceIcon {
+  background: transparent;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.Service--ContentFoot .ServiceIcon > div {
+  background: var(--black);
+}
+
+.Service--ContentFoot a:hover .ServiceIcon > div {
+  background: var(--orange);
+}

@@ -23,7 +23,8 @@ serviceBlocks:
       inventore veritatis et quasi architecto beatae vitae
     title: Restorative dentistry
 documents:
-  - 'https://ucarecdn.com/ff3a7130-e1c5-43c9-af9d-0ae27acc364c~2/nth/0/'
-  - 'https://ucarecdn.com/ff3a7130-e1c5-43c9-af9d-0ae27acc364c~2/nth/1/'
+  - name: 'New patient form'
+    file: 'https://ucarecdn.com/ff3a7130-e1c5-43c9-af9d-0ae27acc364c~2/nth/0/'
+  - name: 'document 2'
+    file: 'https://ucarecdn.com/ff3a7130-e1c5-43c9-af9d-0ae27acc364c~2/nth/1/'
 ---
-

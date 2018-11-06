@@ -79,7 +79,6 @@ export default class Nav extends Component {
                   }
                   frontmatter {
                     title
-                    icon
                   }
                 }
               }

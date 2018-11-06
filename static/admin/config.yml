@@ -171,38 +171,16 @@ collections: # A list of collections the CMS should be able to edit
               options:
                 { media_library: { config: { imageShrink: 2600x2600 } } },
             }
-          - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Address, name: address, widget: text }
+          - { label: Text, name: text, widget: text }
           - { label: Phone, name: phone, widget: string }
           - { label: Email Address, name: email, widget: string }
-          - name: locations
-            label: locations
-            widget: list
-            fields:
-              - {
-                  name: mapLink,
-                  label: mapLink,
-                  widget: string,
-                  required: false,
-                  default: '',
-                }
-              - {
-                  name: lat,
-                  label: latitude,
-                  widget: string,
-                  required: false,
-                  delete: false,
-                  default: '',
-                }
-              - {
-                  name: lng,
-                  label: longitude,
-                  widget: string,
-                  required: false,
-                  delete: false,
-                  default: '',
-                }
+          - {
+              label: Content,
+              name: content,
+              widget: markdown,
+              buttons: { bulleted-list, bold, italic },
+            }
+          - { label: Map, name: map, widget: image }
           - label: 'Meta'
             required: false
             name: 'meta'
@@ -298,10 +276,10 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: title, name: title, widget: string }
           - { label: content, name: content, widget: text }
-      - label: Document,
-        name: document,
-        widget: list,
-        required: false,
+      - label: Document
+        required: false
+        name: document
+        widget: list
         fields:
           - { label: Name, name: name, widget: string }
           - { label: File, name: file, widget: file }

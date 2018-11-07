@@ -38,7 +38,11 @@ export default () => {
                     <p>{section.content}</p>
                   </div>
                   <div>
-                    <button className="Button Icon">
+                    <Link
+                      to="/contact"
+                      className="Button Icon"
+                      title="Book now"
+                    >
                       <svg
                         className="icon"
                         height="16"
@@ -51,7 +55,7 @@ export default () => {
                         </g>
                       </svg>
                       Book Now
-                    </button>
+                    </Link>
                     <Link
                       to="/contact"
                       className="Button Blue"

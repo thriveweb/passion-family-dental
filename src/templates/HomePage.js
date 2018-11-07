@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import _camelCase from 'lodash/camelCase'
 
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
@@ -19,7 +20,8 @@ export const HomePageTemplate = ({
   description,
   servicesSection,
   services,
-  benefitsSection
+  benefitsSection,
+  phone
 }) => {
   return (
     <main className="Home">
@@ -34,7 +36,7 @@ export const HomePageTemplate = ({
       <section className="Home--QuoteSection section">
         <div className="container">
           <p className="larger">{description}</p>
-          <a href="/contact" className="Button">
+          <a href={'tel:' + _camelCase(phone)} className="Button">
             Call us
           </a>
         </div>
@@ -103,12 +105,13 @@ export const HomePageTemplate = ({
   )
 }
 // Export Default HomePage for front-end
-const HomePage = ({ data: { page, services } }) => (
+const HomePage = ({ data: { page, services, contact } }) => (
   <Layout meta={page.frontmatter.meta || false}>
     <HomePageTemplate
       {...page}
       {...page.frontmatter}
       services={{ ...services }}
+      phone={contact.edges[0].node.frontmatter.phone || false}
     />
   </Layout>
 )
@@ -149,6 +152,17 @@ export const pageQuery = graphql`
       edges {
         node {
           ...Services
+        }
+      }
+    }
+    contact: allMarkdownRemark(
+      filter: { frontmatter: { template: { eq: "ContactPage" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            phone
+          }
         }
       }
     }

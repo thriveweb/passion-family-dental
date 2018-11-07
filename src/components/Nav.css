@@ -7,11 +7,12 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
 }
 
-.Nav--Container {
+.Nav--Container.container.larger {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 9rem;
+  padding: 0 1rem;
 }
 
 .Nav--Links {
@@ -44,6 +45,12 @@
   border-bottom-color: transparent;
   font-family: var(--font-secondary);
   text-transform: capitalize;
+}
+
+@media (max-width: 1440px) {
+  .NavLink {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .NavLink:hover,
@@ -100,7 +107,7 @@
   color: var(--white);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .Nav--Container {
     display: flex;
   }

@@ -4,7 +4,6 @@
   color: var(--white);
   padding-top: 15rem;
   padding-bottom: 20rem;
-  clip-path: url(#headerClipPath);
   z-index: 0;
   overflow: hidden;
 }
@@ -38,6 +37,10 @@
 
 .PageHeader--Button {
   margin-left: 4rem;
+}
+
+.PageHeader .BackgroundImage {
+  background: var(--grey);
 }
 
 .PageHeader .BackgroundImage::after,

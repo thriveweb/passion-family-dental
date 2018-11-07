@@ -59,3 +59,24 @@
   background: var(--black);
   opacity: 0.2;
 }
+
+@media (max-width: 1024px) {
+  .ParientInfoPage .container.Flexbox {
+    flex-direction: column-reverse;
+  }
+
+  .ParientInfoPage--Asside {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ParientInfoPage--Asside a {
+    justify-content: center;
+  }
+
+  .ParientInfoPage--Content {
+    width: 100%;
+    margin-top: 5rem;
+    padding-left: 0;
+  }
+}

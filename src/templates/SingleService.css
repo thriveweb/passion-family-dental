@@ -128,3 +128,23 @@
 .Service--ContentFoot a:hover .ServiceIcon > div {
   background: var(--orange);
 }
+
+@media (max-width: 1024px) {
+  .Service .container.Flexbox {
+    flex-direction: column-reverse;
+  }
+
+  .Service--ServicesList {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Service--ServicesList a {
+    justify-content: center;
+  }
+
+  .Service--Content {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}

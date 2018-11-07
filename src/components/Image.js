@@ -84,7 +84,8 @@ class Image extends React.Component {
         //   this.state.isIntersecting ? fullSrc : smallSrc
         // })`,
         backgroundImage: `url(${fullSrc})`,
-        backgroundSize
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
       }
       return (
         // <Observer onChange={this.handleIntersection}>

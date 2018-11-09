@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
+import Content from '../components/Content'
 import FooterSection from '../components/FooterSection'
 
 import './SingleService.css'
@@ -64,7 +65,7 @@ export const SingleServiceTemplate = ({
             serviceBlocks.map((item, i) => (
               <div key={'singel-service-content-block-' + i}>
                 <h3 className="colored">{item.title}</h3>
-                <p>{item.content}</p>
+                <Content source={item.content} />
               </div>
             ))}
           {!!documents && (

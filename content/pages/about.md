@@ -43,22 +43,19 @@ teamMembers:
       Outside of dentistry, Dr. Sam enjoys spending time with his family, nature
       and reading. 
     name: Dr. Sam Ooi
-    photo: 'https://ucarecdn.com/63ac98d2-3798-4b59-b9ef-2d78a9bf5066/'
+    photo: ''
   - description: >-
-      testing testing testing Dr. Sam is a passionate North Lakes local who
-      cares about the Moreton Bay community oral health and want to establish a
-      long lasting patient-dentist relationship with the neighbourhood. 
+      Melody started dental nursing in 1984 and has seen many changes in the
+      dental industry over the years. Married for over thirty years and with two
+      adult children, Melody brings warmth, compassion and understanding to her
+      role.
 
-      He likes to spend time to thoroughly explain your oral health condition
-      and provide tailored made treatment options to suit individual needs. He
-      highly values the trust that his patient placed on him, that is why he
-      always treats his patient with the utmost respect and in a gentle manner.
-      Also, he is committed to carry out all clinical procedures in a very
-      focused and meticulous way.
-
-      Outside of dentistry, Dr. Sam enjoys spending time with his family, nature
-      and reading. 
-    name: test
-    photo: 'https://ucarecdn.com/a0ae4e56-2d10-495c-8c18-144aab5e11ff/'
+      Melody understands that most people are nervous when it comes to visiting
+      the dentist and takes the time to ensure patients are comfortable and
+      relaxed throughout their treatment. Her goal is to have every patient who
+      comes to Passions Family Dental leave the practice with not only a
+      beautiful smile but also looking forward to their next visit.
+    name: Melody Napper
+    photo: ''
 ---
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Location } from '@reach/router'
 import { StaticQuery, graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import { Menu, X, ChevronDown } from 'react-feather'
@@ -9,11 +10,16 @@ import _get from 'lodash/get'
 import Logo from './Logo'
 import './Nav.css'
 
-export default class Nav extends Component {
+export class Navigation extends Component {
   state = {
     active: false,
     activeItem: false,
-    activeSubnav: false
+    activeSubnav: false,
+    currentPath: false
+  }
+
+  componentDidMount() {
+    this.setState({ currentPath: this.props.location.pathname })
   }
 
   handleMenuToggle = () => this.setState({ active: !this.state.active })
@@ -29,14 +35,16 @@ export default class Nav extends Component {
   render() {
     const { active } = this.state
 
-    const NavLink = ({ className, children, ...props }) => {
+    const NavLink = ({ to, className, children, ...props }) => {
       return (
         <Link
           {...props}
-          className={`NavLink ${className || ''}`}
+          to={to}
+          className={`NavLink ${className || ''} ${
+            to === this.state.currentPath ? 'active' : ''
+          }`}
           onClick={this.handleLinkClick}
           title={children}
-          activeClassName="active"
         >
           {children}
         </Link>
@@ -48,15 +56,27 @@ export default class Nav extends Component {
         className={`NavLinkGroup ${this.state.activeSubnav ? 'active' : ''}`}
       >
         {(() => {
+          const path = this.state.currentPath || ''
           if (to) {
             return (
-              <NavLink to={to} {...props} onClick={this.toggleSubnav}>
+              <NavLink
+                className={`NavLink ${
+                  path.includes('services') ? 'active' : ''
+                }`}
+                to={to}
+                {...props}
+                onClick={this.toggleSubnav}
+              >
                 {children}
               </NavLink>
             )
           }
           return (
-            <span className={`NavLink`} {...props} onClick={this.toggleSubnav}>
+            <span
+              className={`NavLink ${path.includes('services') ? 'active' : ''}`}
+              {...props}
+              onClick={this.toggleSubnav}
+            >
               {children}
               <ChevronDown />
             </span>
@@ -168,3 +188,5 @@ export default class Nav extends Component {
     )
   }
 }
+
+export default () => <Location>{route => <Navigation {...route} />}</Location>

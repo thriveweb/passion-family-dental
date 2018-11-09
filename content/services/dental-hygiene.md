@@ -21,6 +21,9 @@ serviceBlocks:
       problems, and ensures a healthy mouth and smile.
     title: Daily Care
 meta:
+  description: >-
+    A good dental care plan will help you beat cavities and gum disease and
+    support all round dental and oral hygiene. Call us today on (07) 3465 1199
   title: Dental Hygiene | Passion Family Dental North Lakes
 ---
 

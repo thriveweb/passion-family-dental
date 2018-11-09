@@ -57,5 +57,10 @@ teamMembers:
       beautiful smile but also looking forward to their next visit.
     name: Melody Napper
     photo: ''
+meta:
+  description: >-
+    At Passion Family Dental, we believe in high quality dental care can only be
+    achieved by placing our valued customers first. Call Us Today on (07) 3465
+    1199
 ---
 

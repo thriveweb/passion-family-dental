@@ -4,8 +4,8 @@ slug: about
 title: About us
 featuredImage: 'https://ucarecdn.com/77285cae-bdac-4c0a-83b8-46e82bed4316/'
 quote: >-
-  At Passion Family Dental, we believe in high quality dental care can only be
-  achieved by placing our valued customers first. 
+  At Passion Family Dental North Lakes, we believe in high quality dental care
+  can only be achieved by placing our valued customers first. 
 content: >-
   We respect and understand that every patient’s circumstances are unique. That
   is why we like to spend time listening to you, taking into consideration of

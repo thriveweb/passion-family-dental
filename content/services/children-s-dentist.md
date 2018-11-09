@@ -26,5 +26,11 @@ serviceBlocks:
       orthodontic or cosmetic dental work and cannot be paid for any services
       provided in a hospital.
     title: Medicare’s Child Dental Benefits Schedule
+meta:
+  description: >-
+    At Passion Family Dental North Lakes we love kids and are trained to handle
+    the wide range of issues associated with children’s dental health. Contact
+    us on (07) 3465 1199
+  title: Children's Dentist In North Lakes
 ---
 

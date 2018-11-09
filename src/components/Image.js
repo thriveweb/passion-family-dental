@@ -40,7 +40,7 @@ class Image extends React.Component {
   render() {
     let {
       background,
-      backgroundSize = 'cover',
+      // backgroundSize = 'cover',
       resolutions = '1000x',
       className = '',
       src,

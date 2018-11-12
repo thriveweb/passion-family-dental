@@ -48,3 +48,33 @@
 .Services--Grid .GridItem p {
   margin-top: 1rem;
 }
+
+@media (max-width: 1440px) {
+  .Services--Grid .GridItem {
+    width: 33rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Services--Grid .GridItem {
+    width: calc(50% - 0.5rem);
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .Services--Grid .GridItem:not(:nth-child(-n + 3)) {
+    margin-top: 0;
+  }
+
+  .Services--Grid .GridItem h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Services--Grid .GridItem {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem auto;
+  }
+}

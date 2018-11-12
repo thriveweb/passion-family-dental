@@ -446,3 +446,21 @@ main {
   border-radius: 50%;
   z-index: -1;
 }
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 6rem;
+    line-height: 6.8rem;
+  }
+
+  .container.larger {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}

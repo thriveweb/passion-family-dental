@@ -101,15 +101,6 @@
   animation: fadeIn 0.5s ease-out;
 }
 
-@media (max-width: 600px) {
-  .PageHeader {
-    padding: 7rem 0;
-  }
-  .PageHeader-large {
-    padding: 12.5rem 0;
-  }
-}
-
 .PageHeader .Figure {
   bottom: 0;
   left: 0;
@@ -118,4 +109,97 @@
   height: auto;
   max-height: 30rem;
   z-index: 3;
+}
+
+@media (max-width: 1024px) {
+  .PageHeader-large {
+    padding: 15rem 0;
+  }
+
+  .PageHeader--Subtitle p {
+    font-size: 3rem;
+  }
+
+  .PageHeader .BackgroundImage::before {
+    height: 50rem;
+    width: 50rem;
+    bottom: -12rem;
+  }
+
+  .PageHeader .BackgroundImage::after {
+    height: 30rem;
+    width: 30rem;
+    bottom: -5rem;
+  }
+
+  .PageHeader--Title {
+    max-width: 50rem;
+    line-height: 6.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .PageHeader {
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+  }
+
+  .PageHeader-large {
+    padding: 10rem 0;
+  }
+
+  .PageHeader--Subtitle p {
+    font-size: 3rem;
+  }
+
+  .PageHeader .BackgroundImage::before {
+    height: 42.5rem;
+    width: 42.5rem;
+  }
+
+  .PageHeader .BackgroundImage::after {
+    height: 22.5rem;
+    width: 22.5rem;
+  }
+
+  .PageHeader.PageHeader-large .BackgroundImage::after {
+    bottom: 0rem;
+  }
+
+  .PageHeader--Title {
+    max-width: 40rem;
+    line-height: 6rem;
+  }
+
+  .PageHeader--Button {
+    margin: 2rem 0;
+    margin-left: 0;
+    display: block;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .PageHeader {
+    padding-bottom: 10rem;
+  }
+
+  .PageHeader-large {
+    padding: 10rem 0;
+  }
+
+  .PageHeader--Subtitle p {
+    font-size: 3rem;
+  }
+
+  .PageHeader .BackgroundImage::before {
+    height: 35rem;
+    width: 35rem;
+  }
+
+  .PageHeader .BackgroundImage::after {
+    height: 17rem;
+    width: 17rem;
+    left: 10rem;
+  }
 }

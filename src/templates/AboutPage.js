@@ -61,7 +61,7 @@ export const AboutPageTemplate = ({
                 arrows: true,
                 focusOnSelect: true,
                 centerMode: true,
-                autoplay: true,
+                // autoplay: true,
                 autoplaySpeed: 3000
               }}
             >
@@ -96,7 +96,12 @@ export const AboutPageTemplate = ({
               >
                 <div>
                   <figure>
-                    <Image background src={member.photo} alt={member.name} />
+                    // <Image background src={member.photo} alt={member.name} />
+                    <Image
+                      background
+                      src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      alt={member.name}
+                    />
                   </figure>
                 </div>
                 <div>
@@ -112,8 +117,22 @@ export const AboutPageTemplate = ({
 
     {!!services && (
       <section className="Home--Services section">
+        <div className="Home--ServicesTextWrapper">
+          <div className="container">
+            <h2>How can we help you:</h2>{' '}
+            <Image
+              className="Figure mobile top"
+              src="/images/servicesFigure-top.svg"
+              alt="services background figure"
+            />
+            <Image
+              className="Figure mobile bottom"
+              src="/images/servicesFigure-bottom.svg"
+              alt="services background figure"
+            />
+          </div>
+        </div>
         <div className="container">
-          <h2>How can we help you:</h2>
           <ServicesGrid services={services} />
         </div>
         <Image

@@ -55,3 +55,51 @@
   display: inline-block;
   margin-left: 3rem;
 }
+
+@media (max-width: 768px) {
+  .Footer .Flexbox {
+    justify-content: space-around;
+  }
+
+  .Footer--Content div {
+    width: calc(50% - 1rem);
+  }
+
+  .Footer .Flexbox > div:last-child {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .Footer--Content a {
+    display: inline-block;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .Footer .Flexbox {
+    justify-content: space-between;
+  }
+
+  .Footer--Content div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .Footer--Content .Footer--Logo {
+    margin-top: 2rem;
+  }
+
+  .Footer .Flexbox > div:last-child {
+    margin-top: 2rem;
+  }
+
+  .Footer--Content a {
+    margin: 0 1rem;
+  }
+
+  .Footer--Copy p {
+    text-align: center;
+  }
+}

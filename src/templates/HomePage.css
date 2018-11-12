@@ -28,6 +28,24 @@
   max-height: 85rem;
 }
 
+.Home--Services .Figure.mobile {
+  display: none;
+  width: 100%;
+}
+
+.Home--Services .Figure.top {
+  bottom: 100%;
+  top: auto;
+}
+
+.Home--Services .Figure.bottom {
+  top: 100%;
+}
+
+.Home--ServicesTextWrapper {
+  position: relative;
+}
+
 .Home--Benefits {
   position: relative;
   z-index: 1;
@@ -78,4 +96,83 @@
 .Home--BenefitsGridItem p {
   display: block;
   position: relative;
+}
+
+@media (max-width: 1440px) {
+  .Home--Services .Figure {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Home--Services {
+    padding-top: 10rem;
+  }
+
+  .Home--BenefitsGridItem {
+    width: 100%;
+    max-width: 80rem;
+    margin: 2.5rem auto;
+  }
+
+  .SideCircleBlue::after {
+    bottom: -5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home--ServicesTextWrapper {
+    padding: 2rem 0;
+    background-color: var(--grey);
+  }
+
+  .Home--Services .Figure {
+    top: 2rem;
+  }
+
+  .Home--Services .Figure {
+    display: none;
+  }
+
+  .Home--Services .Figure.mobile {
+    display: block;
+  }
+
+  .Home--Services p {
+    margin-bottom: 5rem;
+  }
+
+  .Home--BenefitsGridItem {
+    max-width: 50rem;
+  }
+
+  .Home--BenefitsGridItem figure {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .Home--QuoteSection .larger {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .Home--Services {
+    padding-top: 5rem;
+  }
+
+  .Home--BenefitsGridItem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Home--BenefitsGridItem > div:last-child {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .Home--BenefitsGridItem h3.colored {
+    margin: 2.5rem auto;
+  }
 }

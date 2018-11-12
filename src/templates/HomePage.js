@@ -44,9 +44,23 @@ export const HomePageTemplate = ({
 
       {!!servicesSection && (
         <section className="Home--Services section">
+          <div className="Home--ServicesTextWrapper">
+            <div className="container">
+              <h2>{servicesSection.title}</h2>
+              <p className="larger">{servicesSection.shortDescription}</p>
+            </div>
+            <Image
+              className="Figure mobile top"
+              src="/images/servicesFigure-top.svg"
+              alt="services background figure"
+            />
+            <Image
+              className="Figure mobile bottom"
+              src="/images/servicesFigure-bottom.svg"
+              alt="services background figure"
+            />
+          </div>
           <div className="container">
-            <h2>{servicesSection.title}</h2>
-            <p className="larger">{servicesSection.shortDescription}</p>
             {!!services && <ServicesGrid services={services} />}
           </div>
           <Image

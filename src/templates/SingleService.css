@@ -146,5 +146,36 @@
   .Service--Content {
     width: 100%;
     margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .Service--Content p.larger {
+    margin: 0;
+  }
+
+  .Service--ServicesList h4 {
+    font-size: 3rem;
+    line-height: 4.4rem;
+    text-align: left;
+  }
+
+  .Service--ServicesList h4::after {
+    width: 12rem;
+  }
+
+  .Services--ServicesListWrap {
+    column-count: 2;
+  }
+
+  .Service--ServicesList {
+    padding: 3rem;
+  }
+
+  .Service--ServicesList a {
+    justify-content: flex-start;
+  }
+
+  .Service--ServicesList a span {
+    font-size: ;
   }
 }

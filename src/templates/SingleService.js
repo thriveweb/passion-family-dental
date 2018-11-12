@@ -25,25 +25,27 @@ export const SingleServiceTemplate = ({
         <div>
           <aside className="Service--ServicesList">
             <h4>Other Services</h4>
-            {!!services &&
-              services.map((service, i) => {
-                const icon = {
-                  maskImage: `url(${service.node.frontmatter.icon})`,
-                  WebkitMaskImage: `url(${service.node.frontmatter.icon})`
-                }
-                return (
-                  <Link
-                    to={service.node.fields.slug}
-                    key={'service-' + i}
-                    className="FlexBox"
-                  >
-                    <div className="ServiceIcon">
-                      <div style={icon} />
-                    </div>
-                    <span>{service.node.frontmatter.title}</span>
-                  </Link>
-                )
-              })}
+            <div className="Services--ServicesListWrap">
+              {!!services &&
+                services.map((service, i) => {
+                  const icon = {
+                    maskImage: `url(${service.node.frontmatter.icon})`,
+                    WebkitMaskImage: `url(${service.node.frontmatter.icon})`
+                  }
+                  return (
+                    <Link
+                      to={service.node.fields.slug}
+                      key={'service-' + i}
+                      className="FlexBox"
+                    >
+                      <div className="ServiceIcon">
+                        <div style={icon} />
+                      </div>
+                      <span>{service.node.frontmatter.title}</span>
+                    </Link>
+                  )
+                })}
+            </div>
             {!!documents && (
               <div>
                 <h5>{documents[0].name}</h5>

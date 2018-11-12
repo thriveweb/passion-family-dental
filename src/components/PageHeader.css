@@ -136,6 +136,10 @@
     max-width: 50rem;
     line-height: 6.8rem;
   }
+
+  .PageHeader .Figure {
+    max-height: 15rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -171,6 +175,10 @@
     line-height: 6rem;
   }
 
+  .PageHeader--Subtitle {
+    margin-right: 2rem;
+  }
+
   .PageHeader--Button {
     margin: 2rem 0;
     margin-left: 0;
@@ -201,5 +209,19 @@
     height: 17rem;
     width: 17rem;
     left: 10rem;
+  }
+
+  .PageHeader--Title {
+    max-width: 35rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  .PageHeader--Button {
+    margin-bottom: 0;
+  }
+
+  .PageHeader--Subtitle {
+    margin-right: 0;
   }
 }

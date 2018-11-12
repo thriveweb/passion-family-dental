@@ -38,3 +38,74 @@
 .Footer--Section .Flexbox > div:last-of-type a {
   margin-left: 2rem;
 }
+
+@media (max-width: 1024px) {
+  .Footer--Section {
+    margin-top: 25rem;
+  }
+
+  .Footer--Section h2 {
+    text-align: center;
+  }
+  .Footer--Section h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .Footer--Section .Flexbox {
+    flex-direction: column;
+  }
+
+  .Footer--Section .Flexbox > div {
+    width: 100%;
+    max-width: 60rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .Footer--Section .Flexbox > div:last-of-type {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .Footer--Section .Figure {
+    max-height: 25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer--Section {
+    margin-top: 15rem;
+    padding-bottom: 10rem;
+  }
+
+  .Footer--Section .Flexbox > div:last-of-type a {
+    margin-left: 1rem;
+  }
+
+  .Footer--Section .Flexbox > div:last-of-type a:first-of-type {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .Footer--Section {
+    margin-top: 15rem;
+    padding-bottom: 5rem;
+  }
+
+  .Footer--Section .Flexbox > div:last-of-type {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Footer--Section .Flexbox > div:last-of-type a:first-of-type {
+    margin-left: auto;
+  }
+
+  .Footer--Section .Flexbox > div:last-of-type a {
+    width: 100%;
+    max-width: 20rem;
+    margin: 1rem auto;
+  }
+}

@@ -35,7 +35,8 @@
 }
 
 .NavLink {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.3rem;
+  margin: 0 0.5rem;
   display: block;
   font-weight: 500;
   transition: color 0.2s, border-bottom-color 0.2s;
@@ -49,7 +50,7 @@
 
 @media (max-width: 1440px) {
   .NavLink {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
   }
 }
 
@@ -112,6 +113,10 @@
     display: flex;
   }
 
+  .Nav--Container.container.larger {
+    height: 6rem;
+  }
+
   .Nav--MenuButton {
     display: block;
     margin-left: auto;
@@ -119,6 +124,7 @@
   }
   .Nav .Logo {
     z-index: 1;
+    max-width: 60vw;
   }
 
   .Nav--Links {
@@ -133,6 +139,7 @@
     bottom: 0;
     background: var(--white);
     animation: Nav--Links 0.2s ease;
+    overflow-x: auto;
   }
 
   .Nav--Links > * + * {
@@ -150,8 +157,9 @@
   }
 
   .Nav .NavLink {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 300;
+    padding: 0.25rem 2rem;
   }
 
   .Nav .NavLink:nth-of-type(2) {
@@ -177,6 +185,16 @@
   }
   .Nav .NavLink:nth-of-type(7) {
     animation-delay: 0.6s;
+  }
+
+  .SubNav {
+    position: relative;
+  }
+
+  .SubNav .NavLink {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0.25rem 0;
   }
 }
 

@@ -23,9 +23,18 @@ serviceBlocks:
       tooth.
     title: Tooth Decay
   - content: >-
-      Perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae
-    title: Restorative dentistry
+      At Passion Family Dental North Lakes we only use composite fillings which
+      are white or  "tooth coloured". Technology for tooth coloured fillings has
+      improved meaning your filings last longer and look great. We can also
+      replace any old ugly amalgam fillings that may have cracked or decayed,
+      with a new tooth coloured filling.
+    title: White Fillings
+  - content: >-
+      Dentures an affordable way improve the your smile. We've witnessed
+      firsthand how improving the look of your smile can really boost a person’s
+      self-confidence. If you're feeling self-conscious about your teeth and
+      avoid smiling in photos or in social situations you may find dentures the
+      right option for your budget.
+    title: Dentures
 ---
 

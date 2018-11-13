@@ -130,6 +130,10 @@
 }
 
 @media (max-width: 1024px) {
+  .Service--Content {
+    padding-left: 0;
+  }
+
   .Service .container.Flexbox {
     flex-direction: column-reverse;
   }
@@ -176,6 +180,36 @@
   }
 
   .Service--ServicesList a span {
-    font-size: ;
+    font-size: 2rem;
+  }
+
+  .Service--ServicesList a .ServiceIcon {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Service--ServicesList {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .Services--ServicesListWrap {
+    column-count: 1;
+  }
+
+  .Service--ServicesList a {
+    justify-content: center;
+  }
+
+  .Service--ServicesList h4 {
+    text-align: center;
+  }
+
+  .Service--ServicesList h4::after {
+    width: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

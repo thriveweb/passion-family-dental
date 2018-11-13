@@ -7,13 +7,12 @@ featuredImage: >-
 text: >-
   Get in touch with us by the numbers below or fill out the form and we will get
   back to you shortly
-phone: 555 555 555
+phone: (07) 3465 1199
 email: info@passionfamilydental.com.au
 content: |-
   **We are here:**
 
-  Suite 2/75 Gold Coast hwy, \
-  Broadbeach 4218, Gold Coast, QLD
+  Unit 4/ 6 Endeavour Boulevard, North Lakes, QLD 4509.
 
   **Open Hours:**
 
@@ -23,7 +22,8 @@ content: |-
 
   \* Free parking available on the street
 
-  ****
+  - - -
 map: 'https://ucarecdn.com/b1ea238e-750c-4467-bd32-08b197e7af03/'
 mapLink: 'https://goo.gl/maps/PMswL6jRbMy'
 ---
+

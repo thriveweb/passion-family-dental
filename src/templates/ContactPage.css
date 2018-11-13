@@ -140,3 +140,11 @@
     margin-top: 2.5rem;
   }
 }
+
+@media (max-width: 425px) {
+  .Contact--top>div {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+}

@@ -60,6 +60,19 @@ contentBlocks:
 
       American Express
     title: Payment policy
+  - text: >-
+      We want to ensure you are getting the best care you can which is why we
+      offer simple interest free DentiCare Payment Plans. DentiCare is a
+      convenient and easy way to budget and pay for your dental treatment
+      allowing you to spread the cost of your treatment over time through a
+      direct debit payment plan. There are no complicated finance contracts, no
+      credit checks and no interest to pay, however, some eligibility criteria
+      does apply.​
+
+
+      If you are considering a payment plan, call our friendly reception team on
+      (07) 3465 1199 to discuss your options.
+    title: Interest free payment plans with DentiCare
 aside:
   downloadTitle: Document
   file: 'https://ucarecdn.com/b76ed7ee-c452-49ed-8ba6-b84996653550/'

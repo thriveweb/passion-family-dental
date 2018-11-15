@@ -7,12 +7,10 @@ quote: >-
   Fast and effective emergency dental care for broken teeth, accident related
   injuries or a nagging toothache.
 shortDescription: >-
-  Passion Family Dental North Lakes take pride in being available for any
-  patient in pain to be seen on the day of calling, so that prolonged discomfort
-  can be avoided. 
-
-  Please call us on (07) 3465 1199 immediately so that we can arrange an
-  appointment to see you as soon as possible. 
+  Passion Family Dental North Lakes provides compassionate care for any patient
+  in pain so that prolonged discomfort can be avoided. Please call us on (07)
+  3465 1199 immediately so that we can arrange an appointment to see you as soon
+  as possible. 
 serviceBlocks: []
 meta:
   description: >-

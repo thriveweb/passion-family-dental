@@ -59,9 +59,6 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
             <Link className="Link" to="/privacy" title="Privacy">
               Privacy
             </Link>
-            <Link className="Link" to="/disclaimer" title="Disclaimer">
-              Disclaimer
-            </Link>
           </p>
         </div>
       </div>

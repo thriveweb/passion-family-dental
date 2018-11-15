@@ -22,7 +22,7 @@ content: |-
   \*Free parking available on the site and in the street
 
   - - -
-map: 'https://ucarecdn.com/b1ea238e-750c-4467-bd32-08b197e7af03/'
+map: 'https://ucarecdn.com/04ccc1dc-5960-407d-ad6f-8c1801c9771f/'
 mapLink: 'https://goo.gl/maps/1BR8h5YMAdx'
 meta:
   description: >-

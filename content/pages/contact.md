@@ -16,14 +16,18 @@ content: |-
 
   **Open Hours:**
 
-  Mon - Fri: 8:00am-6:00pm \
-  Sat: 8:00am-1:00pm\
-  Sun and After hours by appointment
+  Mon - Fri: 8:00am-4:00pm \
+  Sat, Sun and after hours by appointment
 
-  \* Free parking available on the street
+  \*Free parking available on the site and in the street
 
   - - -
 map: 'https://ucarecdn.com/b1ea238e-750c-4467-bd32-08b197e7af03/'
 mapLink: 'https://goo.gl/maps/1BR8h5YMAdx'
+meta:
+  description: >-
+    Contact Passion Family Dental your friendly family dentist in North Lakes.
+    Call us today on (07) 3465 1199
+  title: Contact us | Passion Family Dental North Lakes
 ---
 

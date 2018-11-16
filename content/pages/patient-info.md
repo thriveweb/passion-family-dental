@@ -37,7 +37,7 @@ contentBlocks:
     title: Claiming your health fund rebate
   - text: >-
       In the event we are unable to accommodate your desired appointment time,
-      our receptionist will offer to add your to our standby list. Our standby
+      our receptionist will offer to add you to our standby list. Our standby
       list ensures you will be offered your preferred appointment time should it
       become available. Our receptionist will ask your preferences for day and
       time and also check how much notice you require. This way we will not

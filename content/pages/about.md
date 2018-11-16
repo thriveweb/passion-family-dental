@@ -28,7 +28,7 @@ teamMembers:
 
       He likes to spend time to thoroughly explain your oral health condition
       and provide tailored made treatment options to suit individual needs. He
-      highly values the trust that his patient placed on him, that is why he
+      highly values the trust that his patients place on him, that is why he
       always treats his patient with the utmost respect and in a gentle manner.
       Also, he is committed to carry out all clinical procedures in a very
       focused and meticulous way.
@@ -46,9 +46,9 @@ teamMembers:
       Melody understands that most people are nervous when it comes to visiting
       the dentist and takes the time to ensure patients are comfortable and
       relaxed throughout their treatment. Her goal is to have every patient who
-      comes to Passions Family Dental leave the practice with not only a
-      beautiful smile but also looking forward to their next visit.
-    name: Melody Napper
+      comes to Passion Family Dental North Lakes leave the practice with not
+      only a beautiful smile but also looking forward to their next visit.
+    name: Melody
     photo: ''
 meta:
   description: >-

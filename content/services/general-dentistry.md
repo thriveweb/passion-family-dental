@@ -16,10 +16,10 @@ serviceBlocks:
       Tooth decay, if left untreated, leads to the development of holes in the
       teeth, more commonly known as cavities. Cavities are often the result of
       poor dietary choices and oral hygiene practices. It is important to
-      maintain regular checkups so that we can find and stop and decay before it
-      reaches the nerve of the tooth. We will a restore the tooth by removing
-      the decay and replacing it with a dental filling. If left untreated, decay
-      may reach the nerve, meaning that a root canal would be needed to save the
+      maintain regular checkups so that we can find and stop decay before it
+      reaches the nerve of the tooth. We will restore the tooth by removing the
+      decay and replacing it with a dental filling. If left untreated, decay may
+      reach the nerve, meaning that a root canal would be needed to save the
       tooth.
     title: Tooth Decay
   - content: >-

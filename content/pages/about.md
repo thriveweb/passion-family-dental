@@ -7,17 +7,10 @@ quote: >-
   At Passion Family Dental North Lakes, we believe in high quality dental care
   can only be achieved by placing our valued customers first. 
 content: >-
-  We respect and understand that every patient’s circumstances are unique. That
-  is why we like to spend time listening to you, taking into consideration of
-  your needs to help you to find a personalised dental care. 
-
-  A lot of thought has been placed into how we can help you to achieve the
-  finest dental experience in a warm, welcoming environment. With the patient’s
-  best
-
-
-  interests at heart, you can rest assured you will receive a warm, pleasant
-  dental care and experience.
+  We respect and understand that every patient’s circumstances are unique. We
+  like to spend time listening to you, taking into consideration your needs.
+  With your best interests at heart, you can rest assured you will receive a
+  warm, pleasant dental experience.
 
   We would like to say thank you for considering Passion Family Dental North
   Lakes and welcome you and your family to visit our modern, state-of-the-art

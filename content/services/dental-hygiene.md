@@ -10,8 +10,8 @@ shortDescription: >-
 serviceBlocks:
   - content: >-
       We recommend that you come in for a check up and clean every 6 months to
-      help catch any signs of early decay and avoid any other oral health
-      problems in the future. 
+      help detect any signs of early decay and avoid any other oral health
+      problems in the future.
     title: Check up and clean
   - content: >-
       A daily routine of brushing morning and night, flossing, together with

@@ -21,8 +21,8 @@ serviceBlocks:
       If you have chipped, discoloured or slightly crooked teeth or would like
       to close small gaps between your teeth, dental veneers are an excellent
       choice. Veneers can be made from porcelain or composite resin. Passion
-      Family Dental North Lakes can assess assess your budget and advise the
-      best option for you.
+      Family Dental North Lakes can assess your budget and advise the best
+      option for you.
     title: Veneers
   - content: >-
       A crown is a tooth shaped “cap” that is placed over a tooth to restore its

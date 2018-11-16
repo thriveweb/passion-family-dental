@@ -30,8 +30,8 @@ serviceBlocks:
       with a new tooth coloured filling.
     title: White Fillings
   - content: >-
-      Dentures an affordable way improve the your smile. We've witnessed
-      firsthand how improving the look of your smile can really boost a person’s
+      Dentures an affordable way improve your smile. We've witnessed firsthand
+      how improving the look of your smile can really boost a person’s
       self-confidence. If you're feeling self-conscious about your teeth and
       avoid smiling in photos or in social situations you may find dentures the
       right option for your budget.

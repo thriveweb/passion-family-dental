@@ -45,8 +45,7 @@ contentBlocks:
     title: Standby list
   - text: >-
       We require payment on the day of treatment, unless a payment plan has been
-      established through our payment plan provider, DentiCare, or you have been
-      approved to use zipPay.
+      established through our payment plan provider, DentiCare.
 
       We accept payment by:
 
@@ -57,8 +56,6 @@ contentBlocks:
       VISA
 
       MasterCard
-
-      American Express
     title: Payment policy
   - text: >-
       We want to ensure you are getting the best care you can which is why we

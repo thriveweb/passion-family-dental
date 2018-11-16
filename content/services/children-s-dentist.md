@@ -26,6 +26,19 @@ serviceBlocks:
       orthodontic or cosmetic dental work and cannot be paid for any services
       provided in a hospital.
     title: Medicare’s Child Dental Benefits Schedule
+  - content: >-
+      A custom made mouthguard is suitable for anyone who plays a contact sport,
+      or sport where there is risk of accidental injury to your mouth. Damage
+      from dental injuries can often require lifelong dental treatment to try
+      and save the damaged tooth/teeth. Custom made mouthguards offer more
+      protection as they offer more coverage and fit securely than generic
+      mouthguards.
+
+
+      Passion Family Dental is able to provide custom made mouthguards for your
+      child to wear your  while training and playing games. Ask our receptionist
+      about our range of options.
+    title: Mouthguards
 meta:
   description: >-
     At Passion Family Dental North Lakes we love kids and are trained to handle

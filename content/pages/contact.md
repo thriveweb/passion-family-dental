@@ -8,7 +8,7 @@ text: >-
   Get in touch with us by the numbers below or fill out the form and we will get
   back to you shortly
 phone: (07) 3465 1199
-email: info@passionfamilydental.com.au
+email: contact@passionfamilydental.com.au
 content: |-
   **We are here:**
 

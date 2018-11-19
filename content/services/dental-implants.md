@@ -16,7 +16,7 @@ serviceBlocks:
       every step of the way.
     title: Removal of teeth
   - content: >-
-      Wisdom teeth commonly start coming through between the age of 16 and 25.
+      Wisdom teeth commonly start coming through between the age of 17 and 21.
       Without enough space in your jaw your wisdom teeth are at risk of becoming
       impacted. Impacted teeth can become infected and/or damage the tooth in
       front. 

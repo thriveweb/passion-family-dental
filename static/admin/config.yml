@@ -394,21 +394,17 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: Title, name: title, widget: string }
           - { label: content, name: content, widget: text }
+
       - file: 'content/global-content/footer.md'
         label: 'Footer'
         name: 'footer'
         fields:
-          - label: 'Opening Hours'
-            name: 'openingHours'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string }
-              - {
-                  label: content,
-                  name: content,
-                  widget: markdown,
-                  buttons: { bulleted-list, bold, italic },
-                }
+          - {
+              label: Opening Hours,
+              name: openingHours,
+              widget: markdown,
+              buttons: { bulleted-list, bold, italic },
+            }
 
   - name: 'settings'
     label: 'Settings'

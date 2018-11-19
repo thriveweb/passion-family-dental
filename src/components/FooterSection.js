@@ -38,10 +38,11 @@ export default () => {
                     <p>{section.content}</p>
                   </div>
                   <div>
-                    <Link
-                      to="/contact"
+                    <a
                       className="Button Icon"
-                      title="Book now"
+                      href="https://onlinebookingapac.3pointdata.com/soe/new/Passion%20Family%20Dental%20North%20Lakes?pid=AUPFD01"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <svg
                         className="icon"
@@ -55,7 +56,7 @@ export default () => {
                         </g>
                       </svg>
                       Book Now
-                    </Link>
+                    </a>
                     <Link
                       to="/contact"
                       className="Button Blue"

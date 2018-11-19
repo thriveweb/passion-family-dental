@@ -162,7 +162,12 @@ export class Navigation extends Component {
             <NavLink to="/contact/" exact={true.toString()}>
               Contact
             </NavLink>
-            <Link className="Nav--MenuButton Button Icon" to="/contact">
+            <a
+              className="Nav--MenuButton Button Icon"
+              href="https://onlinebookingapac.3pointdata.com/soe/new/Passion%20Family%20Dental%20North%20Lakes?pid=AUPFD01"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 className="icon"
                 height="16"
@@ -175,7 +180,7 @@ export class Navigation extends Component {
                 </g>
               </svg>
               Book Now
-            </Link>
+            </a>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

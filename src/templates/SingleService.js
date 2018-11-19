@@ -49,7 +49,12 @@ export const SingleServiceTemplate = ({
 
             <div>
               <h5 />
-              <Link className="Nav--MenuButton Button Icon" to="/contact">
+              <a
+                className="Button Icon"
+                href="https://onlinebookingapac.3pointdata.com/soe/new/Passion%20Family%20Dental%20North%20Lakes?pid=AUPFD01"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   className="icon"
                   height="16"
@@ -62,7 +67,7 @@ export const SingleServiceTemplate = ({
                   </g>
                 </svg>
                 Book Now
-              </Link>
+              </a>
             </div>
           </aside>
         </div>

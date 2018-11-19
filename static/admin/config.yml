@@ -296,7 +296,12 @@ collections: # A list of collections the CMS should be able to edit
         widget: list
         fields:
           - { label: title, name: title, widget: string }
-          - { label: text, name: text, widget: text }
+          - {
+              label: text,
+              name: text,
+              widget: markdown,
+              buttons: { bulleted-list, bold, italic },
+            }
 
       - label: 'Meta'
         required: false

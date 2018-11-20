@@ -43,33 +43,13 @@ contentBlocks:
       time and also check how much notice you require. This way we will not
       bother you unless the appointment is likely to be suitable.
     title: Standby list
-  - text: >-
-      We require payment on the day of treatment, unless a payment plan has been
-      established through our payment plan provider, DentiCare.
-
-      We accept payment by:
-
+  - text: |-
+      We require payment on the day of treatment. We accept payment by:
       cash or cheque
-
       EFTPOS
-
       VISA
-
       MasterCard
     title: Payment policy
-  - text: >-
-      We want to ensure you are getting the best care you can which is why we
-      offer simple interest free DentiCare Payment Plans. DentiCare is a
-      convenient and easy way to budget and pay for your dental treatment
-      allowing you to spread the cost of your treatment over time through a
-      direct debit payment plan. There are no complicated finance contracts, no
-      credit checks and no interest to pay, however, some eligibility criteria
-      does apply.​
-
-
-      If you are considering a payment plan, call our friendly reception team on
-      (07) 3465 1199 to discuss your options.
-    title: Interest free payment plans with DentiCare
 aside:
   downloadTitle: Document
   file: 'https://ucarecdn.com/b76ed7ee-c452-49ed-8ba6-b84996653550/'

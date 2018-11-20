@@ -24,6 +24,9 @@ content: >-
   Sat, Sun and after hours by appointment
 
 
+  24 hours notice for cancellation or risk a fee
+
+
   \*We have Free parking, allocated specifically for our patients is available
   on site, as well as on street parking
 

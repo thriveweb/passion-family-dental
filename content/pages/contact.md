@@ -9,17 +9,24 @@ text: >-
   back to you shortly
 phone: (07) 3465 1199
 email: contact@passionfamilydental.com.au
-content: |-
+content: >-
   **We are here:**
+
 
   Unit 4/ 6 Endeavour Boulevard, North Lakes, QLD 4509.
 
+
   **Open Hours:**
 
+
   Mon - Fri: 8:00am-4:00pm \
+
   Sat, Sun and after hours by appointment
 
-  \*Free parking available on the site and in the street
+
+  \*We have Free parking, allocated specifically for our patients is available
+  on site, as well as on street parking
+
 
   - - -
 map: 'https://ucarecdn.com/04ccc1dc-5960-407d-ad6f-8c1801c9771f/'

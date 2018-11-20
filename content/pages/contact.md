@@ -28,6 +28,9 @@ content: >-
   on site, as well as on street parking
 
 
+  We are wheelchair friendly!
+
+
   - - -
 map: 'https://ucarecdn.com/04ccc1dc-5960-407d-ad6f-8c1801c9771f/'
 mapLink: 'https://goo.gl/maps/1BR8h5YMAdx'

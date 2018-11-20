@@ -23,8 +23,8 @@ sliderImages:
 teamMembers:
   - description: >-
       Dr. Sam is a passionate North Lakes local who cares about the Moreton Bay
-      community oral health and want to establish a long lasting patient-dentist
-      relationship with the neighbourhood. 
+      community oral health and wants to establish a long lasting
+      patient-dentist relationship with the neighbourhood. 
 
       He likes to spend time to thoroughly explain your oral health condition
       and provide tailored made treatment options to suit individual needs. He

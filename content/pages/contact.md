@@ -16,7 +16,8 @@ content: |-
 
   **Open Hours:**
 
-  Mon - Fri: 8:00am-4:00pm \
+  Mon - Fri: 8:00am-4:00pm 
+
   Sat, Sun and after hours by appointment
 
   \*Free parking available on the site and in the street

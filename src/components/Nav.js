@@ -139,7 +139,10 @@ export class Navigation extends Component {
         }}
       />
     )
-
+    const icon = {
+      maskImage: `url(/images/icons/phoneIcon.svg)`,
+      WebkitMaskImage: `url(/images/icons/phoneIcon.svg)`
+    }
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
         <div className="Nav--Container container larger">
@@ -181,6 +184,16 @@ export class Navigation extends Component {
               </svg>
               Book Now
             </a>
+            <a
+              className="Nav--MenuButton Button Blue desktopHidden Nav-Phone"
+              href="tel:0734651199"
+              title="Give us a call"
+            >
+              <div className="ServiceIcon">
+                <div style={icon} />
+              </div>
+              (07) 3465 1199
+            </a>
           </div>
           <button
             className="Button-blank Nav--MenuButton"
@@ -188,6 +201,16 @@ export class Navigation extends Component {
           >
             {active ? <X /> : <Menu />}
           </button>
+          <a
+            className="Nav-Phone mobileHidden"
+            href="tel:0734651199"
+            title="Give us a call"
+          >
+            <div className="ServiceIcon">
+              <div style={icon} />
+            </div>
+            (07) 3465 1199
+          </a>
         </div>
       </nav>
     )

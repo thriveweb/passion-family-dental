@@ -5,26 +5,26 @@ featuredImage: 'https://ucarecdn.com/74000439-0df9-4e2d-8329-80ab38f22fb3/'
 icon: 'https://ucarecdn.com/6c58b91d-c85b-46a1-8c1e-7d5622af39a4/'
 quote: It's never too early to begin teaching good oral hygiene to your children.
 shortDescription: >-
-  At Passion Family Dental North Lakes we love kids and are trained to handle
-  the wide range of issues associated with children’s dental health.  
+  At Passion Family Dental North Lakes we love kids and are able to handle an
+  extensive range of children’s dental health issues. 
 
 
   We know that your child’s visit may be daunting but we are here to ease your
   little one into their first dental visit.
 serviceBlocks:
-  - content: >
-      Medicare’s Child Dental Benefits Schedule provides access to benefits for
-      basic dental services to children aged 2-17 years. The total benefit
-      entitlement is capped at $1,000 per child over a two calendar year period.
+  - content: >-
+      Medicare’s Child Dental Benefits Schedule gives eligible children aged
+      between 2 and 17 access to benefits for basic dental services with the
+      total benefit capped at $1,000 per child over a two calendar year period.
       The CDBS has a means test, which requires receipt of Family Tax Benefit
       Part A or a relevant Australian Government payment.
 
 
-      The Child Dental Benefit Schedule provides individual benefits for a range
-      of services including examinations, x-rays, cleaning, fissure sealing,
-      fillings, root canals and extractions. Benefits are not available for
-      orthodontic or cosmetic dental work and cannot be paid for any services
-      provided in a hospital.
+      The Child Dental Benefit Schedule provides benefits for a wide range of
+      services including examinations, fillings, cleaning, x-rays, fissure
+      sealing, root canals and extractions. Unfortunately benefits are not
+      available cosmetic dental, orthodontics or any paid services provided in
+      hospital.
     title: Medicare’s Child Dental Benefits Schedule
   - content: >-
       A custom made mouthguard is suitable for anyone who plays a contact sport,

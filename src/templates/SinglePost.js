@@ -64,51 +64,50 @@ export const SinglePostTemplate = ({
 
             <div className="SinglePost--InnerContent">
               <Content source={body} />
-
               {services &&
                 services.hasOwnProperty('edges') &&
-                services.edges.length && (
-                  <div className="SinglePost--RelatedService Services--Grid Flexbox Grid">
-                    <h2>Related Service</h2>
-                    {services.edges.map((item, index) => {
-                      const service = {
-                        ...item.node.fields,
-                        ...item.node.frontmatter
-                      }
-                      if (
-                        _kebabCase(service.title) === _kebabCase(relatedService)
-                      ) {
-                        const icon = {
-                          maskImage: `url(${service.icon})`,
-                          WebkitMaskImage: `url(${service.icon})`
-                        }
-                        return (
-                          <Link
-                            to={service.slug}
-                            className="GridItem"
-                            key={service.slug + '-' + index}
-                            title={service.title}
-                          >
-                            <div className="GridItemHead">
-                              <div className="ServiceIcon">
-                                <div style={icon} />
-                              </div>
-                              <h3>{service.title}</h3>
+                services.edges.length &&
+                services.edges.map((item, index) => {
+                  const service = {
+                    ...item.node.fields,
+                    ...item.node.frontmatter
+                  }
+                  if (
+                    _kebabCase(service.title) === _kebabCase(relatedService)
+                  ) {
+                    const icon = {
+                      maskImage: `url(${service.icon})`,
+                      WebkitMaskImage: `url(${service.icon})`
+                    }
+                    return (
+                      <div className="SinglePost--RelatedService Services--Grid Flexbox Grid">
+                        <h2>Related Service</h2>
+                        <Link
+                          to={service.slug}
+                          className="GridItem"
+                          key={service.slug + '-' + index}
+                          title={service.title}
+                        >
+                          <div className="GridItemHead">
+                            <div className="ServiceIcon">
+                              <div style={icon} />
                             </div>
-                            <p>
-                              {_truncate(service.shortDescription, {
-                                length: 180,
-                                separator: ' '
-                              })}
-                            </p>
-                            <span>See more+</span>
-                          </Link>
-                        )
-                      }
-                      return
-                    })}
-                  </div>
-                )}
+                            <h3>{service.title}</h3>
+                          </div>
+                          <p>
+                            {_truncate(service.shortDescription, {
+                              length: 180,
+                              separator: ' '
+                            })}
+                          </p>
+                          <span>See more+</span>
+                        </Link>
+                      </div>
+                    )
+                  }
+                  return
+                })}
+              )}
             </div>
 
             <div className="SinglePost--Pagination">

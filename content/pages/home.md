@@ -23,7 +23,8 @@ servicesSection:
 benefitsSection:
   benefits:
     - benefit: Professional
-      featuredImage: 'https://ucarecdn.com/3c271bbc-19be-4042-90b6-390066668ab2/'
+      featuredImage: >-
+        https://ucarecdn.com/9ce8a16b-13cc-42ed-9fe2-8e4983bd9955/-/crop/2179x1727/0,5/-/preview/-/enhance/100/
       shortDescription: >-
         We are passionate team of dental professionals with over 40 years
         combined experience in dentistry. 

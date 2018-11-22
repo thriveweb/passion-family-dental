@@ -28,16 +28,19 @@ benefitsSection:
         We are passionate team of dental professionals with over 40 years
         combined experience in dentistry. 
     - benefit: Technology
-      featuredImage: 'https://ucarecdn.com/e88dbfe8-2dd5-42f3-a882-cf40b2f7f061/'
+      featuredImage: >-
+        https://ucarecdn.com/0259ab24-6783-4c5f-bae4-f911659f2d80/-/crop/320x236/49,114/-/preview/-/enhance/50/
       shortDescription: >-
         Our modern technology ensures we can take care of the finest details of
         your teeth.
     - benefit: Comfort
-      featuredImage: 'https://ucarecdn.com/4f27a7c7-1279-40db-bd29-cc38e57ca4ce/'
+      featuredImage: >-
+        https://ucarecdn.com/4e033431-54bb-4674-bdea-33ba16eb648d/-/crop/1210x825/1001,809/-/preview/-/enhance/62/
       shortDescription: |
         Throughout every appointment your comfort is our main priority. 
     - benefit: Convenient
-      featuredImage: 'https://ucarecdn.com/5ab9bb44-ad63-439a-914d-d0b15803af5f/'
+      featuredImage: >-
+        https://ucarecdn.com/a005698e-ab37-4f92-ab75-9e123e6656a2/-/crop/1218x1447/238,493/-/preview/-/enhance/92/
       shortDescription: >-
         We offer online booking and the convenience of on-the-spot HICAPS claims
         and quotes for your private health insurance.

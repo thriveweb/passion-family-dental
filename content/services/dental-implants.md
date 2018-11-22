@@ -1,7 +1,8 @@
 ---
 template: SingleService
 title: Oral Surgery
-featuredImage: 'https://ucarecdn.com/74000439-0df9-4e2d-8329-80ab38f22fb3/'
+featuredImage: >-
+  https://ucarecdn.com/0c656d65-0ecc-4de2-a238-1cc4a79b0969/-/crop/2068x1122/0,587/-/preview/-/enhance/67/
 icon: 'https://ucarecdn.com/f34e5dee-0187-4ead-a059-ad9720392dec/'
 quote: 'We take pride in our gentle, calm and patient approach to oral surgery. '
 shortDescription: >-

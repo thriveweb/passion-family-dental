@@ -2,7 +2,8 @@
 template: PatientInfoPage
 slug: patient-info
 title: Patient info
-featuredImage: 'https://ucarecdn.com/5fd63bbe-dbca-4aee-9da4-2bb46ccdd53f/'
+featuredImage: >-
+  https://ucarecdn.com/f4ac5cf7-644b-4474-b11b-8f4ed071b572/-/crop/1540x1660/0,27/-/preview/-/enhance/50/
 quote: Your Comfort is Our Top Priority
 contentBlocks:
   - text: >-
@@ -26,7 +27,8 @@ contentBlocks:
       appointment. If you receive an SMS reminder, we ask that you respond to
       the message to secure your appointment time. We understand it is not
       always possible to keep your agreed appointment time and appreciate as
-      much notice as possible should you need to reschedule.
+      much notice as possible should you need to reschedule. Failure to give 24
+      hours notice of cancellation may incur a small fee.
     title: Appointment reminders
   - text: >-
       Claiming your health fund rebate is fast and efficient with HICAPS

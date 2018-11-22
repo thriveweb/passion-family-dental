@@ -57,6 +57,13 @@ teamMembers:
     name: Melody
     photo: >-
       https://ucarecdn.com/fff799ed-5a65-48e4-b809-f5f53c0d63ce/-/crop/875x927/639,50/-/preview/-/enhance/50/
+  - description: >-
+      Alison is our friendly dental assistant. With her gentle caring
+      personality, she always makes sure that our patients receive the most
+      comfortable dental experience.
+    name: Alison
+    photo: >-
+      https://ucarecdn.com/99b4eb1f-8614-45cf-8ceb-e25c5d6f0815/-/crop/619x650/440,489/-/preview/-/enhance/50/
 meta:
   description: >-
     At Passion Family Dental, we believe in high quality dental care can only be

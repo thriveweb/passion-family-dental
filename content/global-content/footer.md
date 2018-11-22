@@ -1,9 +1,9 @@
 ---
 openingHours: |-
-  Mon - Fri: 8:00am-4:00pm 
+  Monday - Friday: 8:00am to 5:00pm 
 
-  Sat, Sun and after hours by appointment
+  Saturday, Sunday and after hours by appointment
 
-  24 hours notice for cancellation or risk a fee
+  24 hours notice for cancellation required please
 ---
 

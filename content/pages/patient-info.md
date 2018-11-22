@@ -47,9 +47,9 @@ contentBlocks:
     title: Standby list
   - text: |-
       We require payment on the day of treatment. We accept payment by:
-      cash or cheque
-      EFTPOS
-      VISA
+      Cash or Cheque
+      EFTPOS,
+      VISA,
       MasterCard
     title: Payment policy
 aside:

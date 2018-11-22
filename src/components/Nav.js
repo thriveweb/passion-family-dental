@@ -162,6 +162,9 @@ export class Navigation extends Component {
             <NavLink to="/patient-info/" exact={true.toString()}>
               Patient Info
             </NavLink>
+            <NavLink to="/blog/" exact={true.toString()}>
+              Blog
+            </NavLink>
             <NavLink to="/contact/" exact={true.toString()}>
               Contact
             </NavLink>

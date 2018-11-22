@@ -34,7 +34,27 @@ export default ({ children, meta, title }) => {
               titleTemplate={`%s | ${siteTitle}`}
             >
               <title>{title}</title>
-              {/* Add font link tags here */}
+
+              {`<!-- Global site tag (gtag.js) - Google Analytics -->`}
+              <script
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=UA-112589638-21"
+              />
+              <script>
+                {`window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-112589638-21');`}
+              </script>
+              <meta
+                name="msvalidate.01"
+                content="B0112812CA622A13C327AF572E2BA5B5"
+              />
+              <meta
+                name="google-site-verification"
+                content="Dwwb0sg0Z2dbDXpFMkJGpwo7ZO1hbmhEn87Jenpj-HI"
+              />
             </Helmet>
 
             <Meta

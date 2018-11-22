@@ -16,10 +16,7 @@ content: >-
   Lakes and welcome you and your family to visit our modern, state-of-the-art
   dental practice. 
 sliderImages:
-  - 'https://ucarecdn.com/1023cf47-acb9-4d8b-a975-e2ed6b88b111~4/nth/0/'
-  - 'https://ucarecdn.com/1023cf47-acb9-4d8b-a975-e2ed6b88b111~4/nth/1/'
-  - 'https://ucarecdn.com/1023cf47-acb9-4d8b-a975-e2ed6b88b111~4/nth/2/'
-  - 'https://ucarecdn.com/1023cf47-acb9-4d8b-a975-e2ed6b88b111~4/nth/3/'
+  - 'https://ucarecdn.com/6f2eccd5-f173-4b01-9f2b-5f7930ec37e0~1/nth/0/'
 teamMembers:
   - description: >-
       Dr. Sam is a passionate North Lakes local who cares about the Moreton Bay

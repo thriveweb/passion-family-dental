@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import _get from 'lodash/get'
+import _truncate from 'lodash/truncate'
+import _kebabCase from 'lodash/kebabCase'
 import _format from 'date-fns/format'
 import { Link, graphql } from 'gatsby'
-import { ChevronLeft } from 'react-feather'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
-import Image from '../components/Image'
 import Layout from '../components/Layout'
 import './SinglePost.css'
 
@@ -16,79 +16,128 @@ export const SinglePostTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
-  categories = []
-}) => (
-  <main>
-    <article itemScope itemType="http://schema.org/BlogPosting">
-      {featuredImage && (
-        <PageHeader title={title} backgroundImage={featuredImage} />
-      )}
+  relatedService,
+  categories = [],
+  services
+}) => {
+  return (
+    <main>
+      <article itemScope itemType="http://schema.org/BlogPosting">
+        {featuredImage && (
+          <PageHeader title={title} backgroundImage={featuredImage} />
+        )}
 
-      <div className="SinglePost container skinny">
-        <div className="SinglePost--Content relative">
-          <div className="SinglePost--Meta">
-            {date && (
-              <time
-                className="SinglePost--Meta--Date"
-                itemProp="dateCreated pubdate datePublished"
-                date={date}
-              >
-                {_format(date, 'MMMM Do, YYYY')}
-              </time>
-            )}
-            {categories && (
-              <Fragment>
-                <span>|</span>
-                {categories.map((cat, index) => (
-                  <span
-                    key={cat.category}
-                    className="SinglePost--Meta--Category"
-                  >
-                    {cat.category}
-                    {/* Add a comma on all but last category */}
-                    {index !== categories.length - 1 ? ',' : ''}
-                  </span>
-                ))}
-              </Fragment>
-            )}
-          </div>
+        <div className="SinglePost container skinny">
+          <div className="SinglePost--Content relative">
+            <div className="SinglePost--Meta">
+              {date && (
+                <time
+                  className="SinglePost--Meta--Date"
+                  itemProp="dateCreated pubdate datePublished"
+                  date={date}
+                >
+                  {_format(date, 'MMMM Do, YYYY')}
+                </time>
+              )}
+              {categories && (
+                <Fragment>
+                  <span>|</span>
+                  {categories.map((cat, index) => (
+                    <span
+                      key={cat.category}
+                      className="SinglePost--Meta--Category"
+                    >
+                      {cat.category}
+                      {/* Add a comma on all but last category */}
+                      {index !== categories.length - 1 ? ',' : ''}
+                    </span>
+                  ))}
+                </Fragment>
+              )}
+            </div>
 
-          {title && (
-            <h1 className="SinglePost--Title" itemProp="title">
-              {title}
-            </h1>
-          )}
-
-          <div className="SinglePost--InnerContent">
-            <Content source={body} />
-          </div>
-
-          <div className="SinglePost--Pagination">
-            {prevPostURL && (
-              <Link
-                className="SinglePost--Pagination--Link prev"
-                to={prevPostURL}
-              >
-                Previous Post
-              </Link>
+            {title && (
+              <h1 className="SinglePost--Title" itemProp="title">
+                {title}
+              </h1>
             )}
-            {nextPostURL && (
-              <Link
-                className="SinglePost--Pagination--Link next"
-                to={nextPostURL}
-              >
-                Next Post
-              </Link>
-            )}
+
+            <div className="SinglePost--InnerContent">
+              <Content source={body} />
+
+              {services &&
+                services.hasOwnProperty('edges') &&
+                services.edges.length && (
+                  <div className="SinglePost--RelatedService Services--Grid Flexbox Grid">
+                    <h2>Related Service</h2>
+                    {services.edges.map((item, index) => {
+                      const service = {
+                        ...item.node.fields,
+                        ...item.node.frontmatter
+                      }
+                      if (
+                        _kebabCase(service.title) === _kebabCase(relatedService)
+                      ) {
+                        const icon = {
+                          maskImage: `url(${service.icon})`,
+                          WebkitMaskImage: `url(${service.icon})`
+                        }
+                        return (
+                          <Link
+                            to={service.slug}
+                            className="GridItem"
+                            key={service.slug + '-' + index}
+                            title={service.title}
+                          >
+                            <div className="GridItemHead">
+                              <div className="ServiceIcon">
+                                <div style={icon} />
+                              </div>
+                              <h3>{service.title}</h3>
+                            </div>
+                            <p>
+                              {_truncate(service.shortDescription, {
+                                length: 180,
+                                separator: ' '
+                              })}
+                            </p>
+                            <span>See more+</span>
+                          </Link>
+                        )
+                      }
+                      return
+                    })}
+                  </div>
+                )}
+            </div>
+
+            <div className="SinglePost--Pagination">
+              {prevPostURL && (
+                <Link
+                  className="SinglePost--Pagination--Link prev"
+                  to={prevPostURL}
+                >
+                  Previous Post
+                </Link>
+              )}
+              {nextPostURL && (
+                <Link
+                  className="SinglePost--Pagination--Link next"
+                  to={nextPostURL}
+                >
+                  Next Post
+                </Link>
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </article>
-  </main>
-)
+      </article>
+    </main>
+  )
+}
 
 // Export Default SinglePost for front-end
-const SinglePost = ({ data: { post, allPosts } }) => {
+const SinglePost = ({ data: { post, allPosts, services } }) => {
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
   return (
     <Layout
@@ -99,6 +148,7 @@ const SinglePost = ({ data: { post, allPosts } }) => {
         {...post}
         {...post.frontmatter}
         body={post.html}
+        services={{ ...services }}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
       />
@@ -123,6 +173,7 @@ export const pageQuery = graphql`
         template
         subtitle
         date
+        relatedService
         categories {
           category
         }
@@ -153,6 +204,16 @@ export const pageQuery = graphql`
           frontmatter {
             title
           }
+        }
+      }
+    }
+
+    services: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "services" } } }
+    ) {
+      edges {
+        node {
+          ...Services
         }
       }
     }

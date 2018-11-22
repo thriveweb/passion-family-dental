@@ -29,7 +29,6 @@ export default ({ globalSettings, socialSettings, navLinks }) => {
       render={data => {
         const { openingHours } =
           data.allMarkdownRemark.edges[0].node.frontmatter || false
-        console.log(openingHours)
         return (
           <footer className="Footer">
             <div className="container">

@@ -20,11 +20,17 @@ export const SinglePostTemplate = ({
   categories = [],
   services
 }) => {
+  let cato = categories
+    ? categories.map((cat, index) => {
+        return cat.category + (index !== categories.length - 1 ? ',' : '')
+      })
+    : ''
+
   return (
     <main>
       <article itemScope itemType="http://schema.org/BlogPosting">
         {featuredImage && (
-          <PageHeader title={title} backgroundImage={featuredImage} />
+          <PageHeader title={cato} backgroundImage={featuredImage} />
         )}
 
         <div className="SinglePost container skinny">
@@ -80,7 +86,7 @@ export const SinglePostTemplate = ({
                       WebkitMaskImage: `url(${service.icon})`
                     }
                     return (
-                      <div className="SinglePost--RelatedService Services--Grid Flexbox Grid">
+                      <div className="SinglePost--RelatedService Flexbox">
                         <h2>Related Service</h2>
                         <Link
                           to={service.slug}

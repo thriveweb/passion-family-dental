@@ -70,7 +70,7 @@
   padding: 0 8rem;
 }
 
-.SinglePost--RelatedService {
+.SinglePost--RelatedService.Services-Grid {
   flex-direction: column;
 }
 
@@ -83,10 +83,23 @@
 
 .SinglePost--RelatedService .GridItem {
   width: 100%;
+  height: 20rem;
+  background: var(--white);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
 }
 
 .SinglePost--RelatedService .GridItem h3 {
   font-size: 2rem;
+  line-height: 2.9rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
+.SinglePost--RelatedService .GridItem p {
+  margin-top: 1rem;
 }
 
 .SinglePost--RelatedService .GridItem .ServiceIcon {
@@ -98,6 +111,19 @@
   display: block;
   margin-top: 0.8rem;
   font-size: 1.3rem;
+}
+
+.SinglePost--RelatedService .GridItem:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.SinglePost--RelatedService .GridItem:hover .ServiceIcon {
+  background: var(--white);
+}
+
+.SinglePost--RelatedService .GridItem:hover .ServiceIcon > div {
+  background: var(--blue);
 }
 
 @media screen and (max-width: 750px) {

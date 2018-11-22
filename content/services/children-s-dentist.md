@@ -1,7 +1,8 @@
 ---
 template: SingleService
 title: Children's Dentistry
-featuredImage: 'https://ucarecdn.com/74000439-0df9-4e2d-8329-80ab38f22fb3/'
+featuredImage: >-
+  https://ucarecdn.com/3f9f64bd-8ed6-4832-9ed1-e36a6b9c4e0d/-/crop/1467x1164/209,91/-/preview/-/enhance/62/
 icon: 'https://ucarecdn.com/6c58b91d-c85b-46a1-8c1e-7d5622af39a4/'
 quote: It's never too early to begin teaching good oral hygiene to your children.
 shortDescription: >-

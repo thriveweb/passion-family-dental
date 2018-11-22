@@ -3,7 +3,7 @@ template: ContactPage
 slug: contact
 title: Contact
 featuredImage: >-
-  https://ucarecdn.com/2887a647-5756-459e-bdca-7f8476a1285c/-/preview/-/rotate/270/
+  https://ucarecdn.com/50751bb5-18e2-41f5-a654-17f9ab99f044/-/crop/2202x3648/0,0/-/preview/-/enhance/65/
 text: >-
   Get in touch with us by the numbers below or fill out the form and we will get
   back to you shortly

@@ -2,7 +2,7 @@
 template: SingleService
 title: Emergency Dental
 featuredImage: >-
-  https://ucarecdn.com/5f539eb0-82ad-4fcc-ad10-fb518e1211a7/-/crop/1389x1623/0,36/-/preview/-/enhance/100/
+  https://ucarecdn.com/5f539eb0-82ad-4fcc-ad10-fb518e1211a7/-/crop/1732x1792/0,0/-/preview/-/enhance/100/
 icon: 'https://ucarecdn.com/711d2b98-4b0b-4488-9579-141c86c96544/'
 quote: >-
   Fast and effective emergency dental care for broken teeth, accident related

@@ -17,14 +17,14 @@ content: >-
   Lakes and welcome you and your family to visit our modern, state-of-the-art
   dental practice. 
 sliderImages:
-  - 'https://ucarecdn.com/043abfef-882f-432b-b716-f61c9346bd62~8/nth/0/'
-  - 'https://ucarecdn.com/043abfef-882f-432b-b716-f61c9346bd62~8/nth/1/'
-  - 'https://ucarecdn.com/043abfef-882f-432b-b716-f61c9346bd62~8/nth/2/'
-  - 'https://ucarecdn.com/043abfef-882f-432b-b716-f61c9346bd62~8/nth/3/'
-  - 'https://ucarecdn.com/043abfef-882f-432b-b716-f61c9346bd62~8/nth/4/'
-  - 'https://ucarecdn.com/043abfef-882f-432b-b716-f61c9346bd62~8/nth/5/'
-  - 'https://ucarecdn.com/043abfef-882f-432b-b716-f61c9346bd62~8/nth/6/'
-  - 'https://ucarecdn.com/043abfef-882f-432b-b716-f61c9346bd62~8/nth/7/'
+  - 'https://ucarecdn.com/4d0192ea-57a7-4e39-adbf-3f6ebe20633a~8/nth/0/'
+  - 'https://ucarecdn.com/4d0192ea-57a7-4e39-adbf-3f6ebe20633a~8/nth/1/'
+  - 'https://ucarecdn.com/4d0192ea-57a7-4e39-adbf-3f6ebe20633a~8/nth/2/'
+  - 'https://ucarecdn.com/4d0192ea-57a7-4e39-adbf-3f6ebe20633a~8/nth/3/'
+  - 'https://ucarecdn.com/4d0192ea-57a7-4e39-adbf-3f6ebe20633a~8/nth/4/'
+  - 'https://ucarecdn.com/4d0192ea-57a7-4e39-adbf-3f6ebe20633a~8/nth/5/'
+  - 'https://ucarecdn.com/4d0192ea-57a7-4e39-adbf-3f6ebe20633a~8/nth/6/'
+  - 'https://ucarecdn.com/4d0192ea-57a7-4e39-adbf-3f6ebe20633a~8/nth/7/'
 teamMembers:
   - description: >-
       Dr. Sam is a passionate North Lakes local who cares about the Moreton Bay
@@ -42,7 +42,7 @@ teamMembers:
       and reading. 
     name: Dr. Sam Ooi
     photo: >-
-      https://ucarecdn.com/ee1e6979-16b2-40fa-ae3a-628091970f83/-/crop/681x662/663,225/-/preview/-/enhance/50/
+      https://ucarecdn.com/ee1e6979-16b2-40fa-ae3a-628091970f83/-/crop/747x752/633,145/-/preview/-/enhance/50/
   - description: >-
       Melody started dental nursing in 1984 and has seen many changes in the
       dental industry over the years. Married for over thirty years and with two
@@ -63,7 +63,7 @@ teamMembers:
       comfortable dental experience.
     name: Alison
     photo: >-
-      https://ucarecdn.com/99b4eb1f-8614-45cf-8ceb-e25c5d6f0815/-/crop/619x650/440,489/-/preview/-/enhance/50/
+      https://ucarecdn.com/99b4eb1f-8614-45cf-8ceb-e25c5d6f0815/-/crop/676x686/405,474/-/preview/-/enhance/50/
 meta:
   description: >-
     At Passion Family Dental, we believe in high quality dental care can only be

@@ -8,7 +8,7 @@ featuredImage: >-
 excerpt: >-
   More adults lose teeth due to gum disease than any other factor: bleeding gums
   is not something you can simply ignore!
-relatedService: ''
+relatedService: Dental Hygiene
 ---
 **Bleeding gums can be an indication of gum disease and cannot be ignored.** Usually people think they need to stop or reduce brushing or flossing their teeth when they notice bleeding but in fact they need to do the exact opposite! One of the biggest causes of bleeding gums is the build up of plaque along the gumline. Plaque that is not removed by correct brushing and flossing techniques hardens into tartar and can irritate the gums, this will then cause gums to bleed and can progress into more advanced forms of gum disease such as gingivitis. The best way to reduce plaque to to increase your oral care routine. Make sure you are using a soft toothbrush as sometimes hard toothbrushes are too abrasive and may damage your teeth in the long term. 
 

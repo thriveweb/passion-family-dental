@@ -480,6 +480,7 @@ collections: # A list of collections the CMS should be able to edit
         collection: 'services'
         searchFields: ['title']
         valueField: 'title'
+        required: false
       - label: 'Categories'
         name: 'categories'
         widget: 'list'

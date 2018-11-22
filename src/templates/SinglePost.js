@@ -107,7 +107,6 @@ export const SinglePostTemplate = ({
                   }
                   return
                 })}
-              )}
             </div>
 
             <div className="SinglePost--Pagination">

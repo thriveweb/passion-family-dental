@@ -3,8 +3,9 @@ template: BlogIndex
 slug: blog
 title: Blog
 featuredImage: >-
-  https://ucarecdn.com/2887a647-5756-459e-bdca-7f8476a1285c/-/preview/-/rotate/270/
+  https://ucarecdn.com/a85dc763-c190-463d-a493-471fbbc560dd/-/crop/2148x1182/161,151/-/preview/-/enhance/69/
 meta:
   description: test meta description
   title: test meta title
 ---
+

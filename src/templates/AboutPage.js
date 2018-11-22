@@ -96,11 +96,7 @@ export const AboutPageTemplate = ({
               >
                 <div>
                   <figure>
-                    <Image
-                      background
-                      src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                      alt={member.name}
-                    />
+                    <Image background src={member.photo} alt={member.name} />
                   </figure>
                 </div>
                 <div>

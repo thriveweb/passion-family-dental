@@ -12,9 +12,7 @@ shortDescription: >-
   in pain so that prolonged discomfort can be avoided. Please call us on (07)
   3465 1199 immediately so that we can arrange an appointment to see you as soon
   as possible. 
-serviceBlocks:
-  - title: Oral Surgery
-  - {}
+serviceBlocks: []
 meta:
   description: >-
     Fast and effective emergency dental care for broken teeth, accident related

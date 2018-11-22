@@ -50,7 +50,8 @@ teamMembers:
       comes to Passion Family Dental North Lakes leave the practice with not
       only a beautiful smile but also looking forward to their next visit.
     name: Melody
-    photo: ''
+    photo: >-
+      https://ucarecdn.com/fff799ed-5a65-48e4-b809-f5f53c0d63ce/-/crop/875x927/639,50/-/preview/-/enhance/50/
 meta:
   description: >-
     At Passion Family Dental, we believe in high quality dental care can only be

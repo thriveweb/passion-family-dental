@@ -36,7 +36,8 @@ teamMembers:
       Outside of dentistry, Dr. Sam enjoys spending time with his family, nature
       and reading. 
     name: Dr. Sam Ooi
-    photo: ''
+    photo: >-
+      https://ucarecdn.com/ee1e6979-16b2-40fa-ae3a-628091970f83/-/crop/681x662/663,225/-/preview/-/enhance/50/
   - description: >-
       Melody started dental nursing in 1984 and has seen many changes in the
       dental industry over the years. Married for over thirty years and with two

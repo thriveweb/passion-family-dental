@@ -2,7 +2,8 @@
 template: AboutPage
 slug: about
 title: About us
-featuredImage: 'https://ucarecdn.com/77285cae-bdac-4c0a-83b8-46e82bed4316/'
+featuredImage: >-
+  https://ucarecdn.com/198c1ef6-4b9e-4fff-902d-b5d3d7502cf7/-/crop/2309x1270/0,462/-/preview/
 quote: >-
   At Passion Family Dental North Lakes, we believe in high quality dental care
   can only be achieved by placing our valued customers first. 
@@ -16,7 +17,7 @@ content: >-
   Lakes and welcome you and your family to visit our modern, state-of-the-art
   dental practice. 
 sliderImages:
-  - 'https://ucarecdn.com/6f2eccd5-f173-4b01-9f2b-5f7930ec37e0~1/nth/0/'
+  - 'https://ucarecdn.com/6cb76a22-7dd2-46ae-b076-c8ae19b5f797~1/nth/0/'
 teamMembers:
   - description: >-
       Dr. Sam is a passionate North Lakes local who cares about the Moreton Bay

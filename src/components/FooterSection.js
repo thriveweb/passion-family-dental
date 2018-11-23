@@ -58,7 +58,7 @@ export default () => {
                       Book Now
                     </a>
                     <Link
-                      to="/contact"
+                      to="/contact/"
                       className="Button Blue"
                       title="Contact us"
                     >

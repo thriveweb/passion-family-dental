@@ -44,7 +44,7 @@ export const AboutPageTemplate = ({
       <div className="container">
         <p className="larger">{quote}</p>
         <p className="columns">{content}</p>
-        <Link to="/contact" className="Button" title="Go to contact page">
+        <Link to="/contact/" className="Button" title="Go to contact page">
           Contact us
         </Link>
       </div>

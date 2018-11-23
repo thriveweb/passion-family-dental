@@ -47,13 +47,13 @@ export default ({ globalSettings, socialSettings, navLinks }) => {
                 <div>
                   <h3>Info</h3>
                   <p>
-                    <Link to="/about" title="about us">
+                    <Link to="/about/" title="about us">
                       About Us
                     </Link>
-                    <Link to="/patient-info" title="patient info">
+                    <Link to="/patient-info/" title="patient info">
                       Patient Info
                     </Link>
-                    <Link to="/contact" title="contact">
+                    <Link to="/contact/" title="contact">
                       Contact
                     </Link>
                   </p>
@@ -64,17 +64,21 @@ export default ({ globalSettings, socialSettings, navLinks }) => {
                   <p>
                     © Copyright {new Date().getFullYear()} Passion Family
                     Dental. Site by{' '}
-                    <a href="https://thriveweb.com.au/" rel="">
+                    <a
+                      href="https://thriveweb.com.au/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Thrive Digital
                     </a>
                   </p>
                 </div>
                 <div>
                   <p>
-                    <Link className="Link" to="/faq" title="FAQ">
+                    <Link className="Link" to="/faq/" title="FAQ">
                       FAQ
                     </Link>
-                    <Link className="Link" to="/privacy" title="Privacy">
+                    <Link className="Link" to="/privacy/" title="Privacy">
                       Privacy
                     </Link>
                   </p>

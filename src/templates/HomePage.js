@@ -30,7 +30,7 @@ export const HomePageTemplate = ({
         title={title}
         subtitle={subtitle}
         backgroundImage={featuredImage}
-        button={{ link: '/contact', label: 'Contact us' }}
+        button={{ link: '/contact/', label: 'Contact us' }}
       />
 
       <section className="Home--QuoteSection section">

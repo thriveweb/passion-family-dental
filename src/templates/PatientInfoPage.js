@@ -37,7 +37,7 @@ export const PatientInfoPageTemplate = ({
                 <hr />
                 <div>
                   <h4>{aside.titleFAQ}</h4>
-                  <Link to="/faq" className="Button">
+                  <Link to="/faq/" className="Button">
                     See faq
                   </Link>
                 </div>

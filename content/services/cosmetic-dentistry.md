@@ -28,9 +28,9 @@ serviceBlocks:
   - content: >-
       A crown is a tooth shaped “cap” that is placed over a tooth to restore its
       strength, shape and size. Crowns are a great option when the strength and
-      life span of the tooth is compromised, In some case crons are also used to
-      aesthetically improve your smile. When the crown is cemented into place it
-      completely encases the visible portion of a tooth above the gum line.
+      life span of the tooth is compromised. In some case crowns are also used
+      to aesthetically improve your smile. When the crown is cemented into place
+      it completely encases the visible portion of a tooth above the gum line.
 
 
       Dental bridges can greatly improve your ability to chew and are a great
@@ -39,7 +39,7 @@ serviceBlocks:
       the look and colour of your natural teeth.
     title: Crowns and bridges
   - content: >-
-      If you have crowded teeth Straightening your teeth is often the best way
+      If you have crowded teeth, straightening your teeth is often the best way
       to improve your smile. If you are interested in teeth straightening we
       will refer you to a specialist for orthodontic treatment.
     title: Orthodontic treatment

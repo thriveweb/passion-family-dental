@@ -3,7 +3,7 @@ template: PatientInfoPage
 slug: patient-info
 title: Patient info
 featuredImage: >-
-  https://ucarecdn.com/f4ac5cf7-644b-4474-b11b-8f4ed071b572/-/crop/1561x1267/0,420/-/preview/-/enhance/50/
+  https://ucarecdn.com/f4ac5cf7-644b-4474-b11b-8f4ed071b572/-/crop/1561x1267/0,338/-/preview/-/enhance/50/
 quote: Your Comfort is Our Top Priority
 contentBlocks:
   - text: >-

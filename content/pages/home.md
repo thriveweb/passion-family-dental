@@ -50,7 +50,7 @@ benefitsSection:
     modern, state-of-the-art dental practice.
   title: Our benefits
 meta:
-  title: North Lakes Dentist | Passion Family Dental
+  title: North Lakes Dentist
   description: >-
     Our caring, warm and professional dental team aim to provide you and your
     family with gentle dental care of the highest quality in a calm and relaxing

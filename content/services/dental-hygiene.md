@@ -2,7 +2,7 @@
 template: SingleService
 title: Dental Hygiene
 featuredImage: >-
-  https://ucarecdn.com/3c88d881-92b5-4f49-86e5-c18c9b074e71/-/crop/1768x1534/0,0/-/preview/-/enhance/58/
+  https://ucarecdn.com/3c88d881-92b5-4f49-86e5-c18c9b074e71/-/crop/1847x1732/0,0/-/preview/-/enhance/58/
 icon: 'https://ucarecdn.com/62fa8b38-2890-4f90-9fe5-bd9f044f98b2/'
 quote: 'Prevention is always better than cure. '
 shortDescription: >-

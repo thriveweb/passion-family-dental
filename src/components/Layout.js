@@ -25,7 +25,7 @@ export default ({ children, meta, title }) => {
         }
       `}
       render={data => {
-        const { siteTitle, siteUrl, socialMediaCard, headerScripts } =
+        const { siteTitle, socialMediaCard, headerScripts } =
           data.settingsYaml || {}
         return (
           <Fragment>
@@ -62,7 +62,7 @@ export default ({ children, meta, title }) => {
               absoluteImageUrl={
                 socialMediaCard &&
                 socialMediaCard.image &&
-                siteUrl + socialMediaCard.image
+                socialMediaCard.image
               }
               {...meta}
             />

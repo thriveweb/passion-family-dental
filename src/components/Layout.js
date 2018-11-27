@@ -65,6 +65,7 @@ export default ({ children, meta, title }) => {
                 socialMediaCard.image
               }
               {...meta}
+              {...data.settingsYaml}
             />
 
             <Nav />

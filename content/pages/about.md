@@ -3,7 +3,7 @@ template: AboutPage
 slug: about
 title: About us
 featuredImage: >-
-  https://ucarecdn.com/198c1ef6-4b9e-4fff-902d-b5d3d7502cf7/-/crop/2309x1270/0,462/-/preview/
+  https://ucarecdn.com/198c1ef6-4b9e-4fff-902d-b5d3d7502cf7/-/crop/2309x1270/0,462/-/preview/-/enhance/100/
 quote: >-
   At Passion Family Dental North Lakes, we believe high quality dental care can
   only be achieved by placing our customers first. 
@@ -17,13 +17,13 @@ content: >-
   Lakes and welcome you and your family to visit our modern, state-of-the-art
   dental practice. 
 sliderImages:
-  - 'https://ucarecdn.com/1f243324-0594-436b-a115-871a6e456045~7/nth/0/'
-  - 'https://ucarecdn.com/1f243324-0594-436b-a115-871a6e456045~7/nth/1/'
-  - 'https://ucarecdn.com/1f243324-0594-436b-a115-871a6e456045~7/nth/2/'
-  - 'https://ucarecdn.com/1f243324-0594-436b-a115-871a6e456045~7/nth/3/'
-  - 'https://ucarecdn.com/1f243324-0594-436b-a115-871a6e456045~7/nth/4/'
-  - 'https://ucarecdn.com/1f243324-0594-436b-a115-871a6e456045~7/nth/5/'
-  - 'https://ucarecdn.com/1f243324-0594-436b-a115-871a6e456045~7/nth/6/'
+  - 'https://ucarecdn.com/151479c5-3884-438f-ac0c-0322dda1c2f6~7/nth/0/'
+  - 'https://ucarecdn.com/151479c5-3884-438f-ac0c-0322dda1c2f6~7/nth/1/'
+  - 'https://ucarecdn.com/151479c5-3884-438f-ac0c-0322dda1c2f6~7/nth/2/'
+  - 'https://ucarecdn.com/151479c5-3884-438f-ac0c-0322dda1c2f6~7/nth/3/'
+  - 'https://ucarecdn.com/151479c5-3884-438f-ac0c-0322dda1c2f6~7/nth/4/'
+  - 'https://ucarecdn.com/151479c5-3884-438f-ac0c-0322dda1c2f6~7/nth/5/'
+  - 'https://ucarecdn.com/151479c5-3884-438f-ac0c-0322dda1c2f6~7/nth/6/'
 teamMembers:
   - description: >-
       Dr. Sam is a passionate North Lakes local who cares about the Moreton Bay

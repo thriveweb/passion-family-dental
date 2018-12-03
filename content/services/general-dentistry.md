@@ -2,7 +2,7 @@
 template: SingleService
 title: General Dentistry
 featuredImage: >-
-  https://ucarecdn.com/fdab32de-041c-430f-851c-e0e18c21fb83/-/crop/1654x1171/0,370/-/preview/-/enhance/75/
+  https://ucarecdn.com/cc6de740-0d93-491a-9238-f8a8ea4f1733/-/preview/-/enhance/86/
 icon: 'https://ucarecdn.com/1a7e1b2a-bbfa-4445-a318-62f53823705e/'
 quote: >-
   Passion Family Dental North Lakes provides all your general dentistry for

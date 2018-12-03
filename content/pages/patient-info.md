@@ -12,10 +12,12 @@ contentBlocks:
       focus on the area of concern and discuss options to treat your immediate
       problem.
 
+
       As part of your initial check-up, we recommend 2 standard x-rays to check
       in between your teeth. This allow us to complete a thorough check in
       between your teeth and under any old fillings or crowns that could
       possibly have decay underneath them.
+
 
       If any issues are identified, we will explain your condition and advise
       the best course of treatment. We will also suggest ways you can avoid

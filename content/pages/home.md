@@ -36,7 +36,7 @@ benefitsSection:
         your teeth.
     - benefit: Comfort
       featuredImage: >-
-        https://ucarecdn.com/4e033431-54bb-4674-bdea-33ba16eb648d/-/crop/1210x825/1001,809/-/preview/-/enhance/62/
+        https://ucarecdn.com/ed808551-7c2d-48d3-9bc4-fbc1bf59fe5b/-/crop/1808x1437/501,0/-/preview/-/enhance/52/
       shortDescription: |
         Throughout every appointment your comfort is our main priority. 
     - benefit: Convenient

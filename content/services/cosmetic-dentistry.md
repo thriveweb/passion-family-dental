@@ -2,7 +2,7 @@
 template: SingleService
 title: Cosmetic Dentistry
 featuredImage: >-
-  https://ucarecdn.com/505812ef-62d9-496e-b360-971f6b478c6f/-/crop/1703x1504/5,212/-/preview/-/enhance/50/
+  https://ucarecdn.com/40554a06-8749-47c7-8caf-d7bb366bad48/-/crop/1800x1691/509,0/-/preview/-/enhance/50/
 icon: 'https://ucarecdn.com/a7392f63-b20c-4e43-a7c3-80350c94621f/'
 quote: 'A beautiful smile can really boost a person’s self-confidence. '
 shortDescription: >-

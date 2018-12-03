@@ -47,7 +47,7 @@ benefitsSection:
         and quotes for your private health insurance.
   shortDescription: >-
     Our caring team look forward to welcome you and your family to visit our
-    modern, state-of-the-art dental practice.
+    dental practice.
   title: Our benefits
 meta:
   title: North Lakes Dentist

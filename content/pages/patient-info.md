@@ -54,7 +54,7 @@ contentBlocks:
     title: Payment policy
 aside:
   downloadTitle: Document
-  file: 'https://ucarecdn.com/b76ed7ee-c452-49ed-8ba6-b84996653550/'
+  file: 'https://ucarecdn.com/34b1e723-5ada-4e0f-b3e5-a70c7528f085/'
   titleFAQ: You can find more information on our FAQ page
 ---
 

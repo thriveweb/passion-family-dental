@@ -55,7 +55,7 @@ contentBlocks:
       MasterCard
     title: Payment policy
 aside:
-  downloadTitle: Document
+  downloadTitle: New Patient Medical Form
   file: 'https://ucarecdn.com/34b1e723-5ada-4e0f-b3e5-a70c7528f085/'
   titleFAQ: You can find more information on our FAQ page
 ---

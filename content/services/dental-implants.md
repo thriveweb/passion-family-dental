@@ -29,5 +29,11 @@ serviceBlocks:
       if your wisdom teeth are in a complex position we may  recommend you to a
       specialist for a second opinion and management.
     title: Surgical removal of wisdom teeth
+meta:
+  description: >-
+    We take pride in our gentle, calm and patient approach to oral surgery. Our
+    priority is to maximise comfort, reduce stress and make your visit pain
+    free.
+  title: Oral Surgery | Passion Family Dental
 ---
 

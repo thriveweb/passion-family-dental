@@ -45,9 +45,9 @@ serviceBlocks:
     title: Orthodontic treatment
 meta:
   description: >-
-    The first step improving the look of your smile is a discussion with us. We
-    will listen to you, find out what you are hoping to achieve and then advise
-    the best treatment options.  Call us today on (07) 3465 1199
+    The first step towards improving your smile is a discussion with us. We
+    listen to you, find out what you are hoping to achieve and advise your best
+    option.
   title: Cosmetic Dentistry
 ---
 

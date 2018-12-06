@@ -58,5 +58,10 @@ aside:
   downloadTitle: New Patient Medical Form
   file: 'https://ucarecdn.com/34b1e723-5ada-4e0f-b3e5-a70c7528f085/'
   titleFAQ: You can find more information on our FAQ page
+meta:
+  description: >-
+    On your first visit to Passion Family Dental North Lakes we will address
+    your immediate concerns without pressure for further treatment.
+  title: Patient info | Passion Family Dental
 ---
 

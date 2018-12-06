@@ -43,8 +43,7 @@ serviceBlocks:
 meta:
   description: >-
     At Passion Family Dental North Lakes we love kids and are trained to handle
-    the wide range of issues associated with children’s dental health. Contact
-    us on (07) 3465 1199
+    the wide range of issues associated with children's dental health.
   title: Children's Dentist In North Lakes
 ---
 

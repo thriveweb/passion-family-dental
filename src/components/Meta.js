@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
@@ -52,14 +52,22 @@ const Meta = props => {
       <meta name="twitter:description" content={siteDescription} />
       <meta name="twitter:title" content={siteTitle} />
 
-      {absoluteImageUrl && (
-        <Fragment>
-          <meta name="twitter:image" content={absoluteImageUrl} />
-          <meta property="og:image:secure_url" content={absoluteImageUrl} />
-          <meta property="og:image" content={absoluteImageUrl} />
-          <meta name="twitter:card" content={absoluteImageUrl} />
-        </Fragment>
-      )}
+      <meta
+        name="twitter:image"
+        content={absoluteImageUrl && absoluteImageUrl}
+      />
+      <meta
+        property="og:image:secure_url"
+        content={absoluteImageUrl && absoluteImageUrl}
+      />
+      <meta
+        property="og:image"
+        content={absoluteImageUrl && absoluteImageUrl}
+      />
+      <meta
+        name="twitter:card"
+        content={absoluteImageUrl && absoluteImageUrl}
+      />
     </Helmet>
   )
 }

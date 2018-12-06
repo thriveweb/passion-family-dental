@@ -48,7 +48,7 @@ export const SingleServiceTemplate = ({
             </div>
 
             <div>
-              <h5 />
+              <h5>{''}</h5>
               <a
                 className="Button Icon"
                 href="https://onlinebookingapac.3pointdata.com/soe/new/Passion%20Family%20Dental%20North%20Lakes?pid=AUPFD01"

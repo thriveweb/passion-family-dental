@@ -111,7 +111,7 @@ export const SinglePostTemplate = ({
                       </div>
                     )
                   }
-                  return
+                  return ''
                 })}
             </div>
 

@@ -37,5 +37,10 @@ serviceBlocks:
       avoid smiling in photos or in social situations you may find dentures the
       right option for your budget.
     title: Dentures
+meta:
+  description: >-
+    Passion Family Dental North Lakes provides all your general dentistry for
+    common dental issues or following early detection.
+  title: General Dentistry | Passion Family Dental
 ---
 

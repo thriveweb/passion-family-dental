@@ -17,6 +17,6 @@ meta:
   description: >-
     Fast and effective emergency dental care for broken teeth, accident related
     injuries or a nagging toothache. Call us today on (07) 3465 1199
-  title: Emergency Dental Care | Passion Family Dental North Lakes
+  title: Emergency Dental Care | Passion Family Dental
 ---
 

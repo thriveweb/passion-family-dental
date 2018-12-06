@@ -53,7 +53,6 @@ meta:
   title: North Lakes Dentist
   description: >-
     Our caring, warm and professional dental team aim to provide you and your
-    family with gentle dental care of the highest quality in a calm and relaxing
-    atmosphere.  Contact Us Today (07) 3465 1199
+    family with gentle dental care of the highest quality.
 ---
 

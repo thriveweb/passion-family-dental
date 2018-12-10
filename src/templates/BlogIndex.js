@@ -29,6 +29,7 @@ export const byCategory = (posts, title, contentType) => {
   const isCategory = contentType === 'postCategories'
   const byCategory = post =>
     post.categories &&
+    post.categories.length &&
     post.categories.filter(cat => cat.category === title).length
   return isCategory ? posts.filter(byCategory) : posts
 }

@@ -20,11 +20,12 @@ export const SinglePostTemplate = ({
   categories = [],
   services
 }) => {
-  let cato = categories
-    ? categories.map((cat, index) => {
-        return cat.category + (index !== categories.length - 1 ? ',' : '')
-      })
-    : ''
+  let cato =
+    categories && categories.length
+      ? categories.map((cat, index) => {
+          return cat.category + (index !== categories.length - 1 ? ',' : '')
+        })
+      : ''
 
   return (
     <main>

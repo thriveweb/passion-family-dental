@@ -22,7 +22,9 @@ const PostCard = ({
     <div className="PostCard--Content">
       {title && <h3 className="PostCard--Title">{title}</h3>}
       <div className="PostCard--Category">
-        {categories && categories.map(cat => cat.category).join(', ')}
+        {categories &&
+          categories.length &&
+          categories.map(cat => cat.category).join(', ')}
       </div>
       {excerpt && <div className="PostCard--Excerpt">{excerpt}</div>}
     </div>

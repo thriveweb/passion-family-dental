@@ -9,6 +9,9 @@ documents:
   name: ''
   file: ''
 
+categories:
+  category: ''
+
 relatedService: ''
 ---
 

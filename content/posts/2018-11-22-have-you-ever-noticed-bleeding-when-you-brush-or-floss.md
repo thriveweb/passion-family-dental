@@ -9,8 +9,7 @@ excerpt: >-
   More adults lose teeth due to gum disease than any other factor: bleeding gums
   is not something you can simply ignore!
 relatedService: Dental Hygiene
-categories:
-  - {}
+categories: []
 meta:
   description: >-
     More adults lose teeth due to gum disease than any other factor: Bleeding

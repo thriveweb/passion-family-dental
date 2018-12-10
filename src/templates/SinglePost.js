@@ -46,21 +46,22 @@ export const SinglePostTemplate = ({
                   {_format(date, 'MMMM Do, YYYY')}
                 </time>
               )}
-              {categories && (
-                <Fragment>
-                  <span>|</span>
-                  {categories.map((cat, index) => (
-                    <span
-                      key={cat.category}
-                      className="SinglePost--Meta--Category"
-                    >
-                      {cat.category}
-                      {/* Add a comma on all but last category */}
-                      {index !== categories.length - 1 ? ',' : ''}
-                    </span>
-                  ))}
-                </Fragment>
-              )}
+              {categories &&
+                categories.length(
+                  <Fragment>
+                    <span>|</span>
+                    {categories.map((cat, index) => (
+                      <span
+                        key={cat.category}
+                        className="SinglePost--Meta--Category"
+                      >
+                        {cat.category}
+                        {/* Add a comma on all but last category */}
+                        {index !== categories.length - 1 ? ',' : ''}
+                      </span>
+                    ))}
+                  </Fragment>
+                )}
             </div>
 
             {title && (

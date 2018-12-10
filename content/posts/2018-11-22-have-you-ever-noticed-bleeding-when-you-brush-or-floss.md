@@ -10,7 +10,7 @@ excerpt: >-
   is not something you can simply ignore!
 relatedService: Dental Hygiene
 categories:
-  - category: update
+  - {}
 meta:
   description: >-
     More adults lose teeth due to gum disease than any other factor: Bleeding

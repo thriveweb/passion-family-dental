@@ -21,7 +21,7 @@ relatedService: Cosmetic Dentistry - Teeth Whitening
 categories:
   - {}
 meta:
-  canonicalLink: 'https://passionfamilydental.com.au/services/cosmetic-dentistry/'
+  canonicalLink: ''
 ---
 **Why did my teeth discolour?**
 

@@ -9,8 +9,7 @@ documents:
   name: ''
   file: ''
 
-categories:
-  category: ''
+categories: []
 
 relatedService: ''
 ---

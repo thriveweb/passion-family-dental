@@ -19,7 +19,7 @@ excerpt: >
   questions or concerned not covered in this blog. 
 relatedService: Cosmetic Dentistry - Teeth Whitening
 categories:
-  - category: Cosmetic Dentistry - Teeth Whitening
+  - category: Teeth Whitening
 meta:
   canonicalLink: ''
   title: 'Teeth Whitening - Giving you a Brighter, Whiter Smile!'

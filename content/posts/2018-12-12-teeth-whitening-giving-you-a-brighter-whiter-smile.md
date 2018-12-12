@@ -22,6 +22,7 @@ categories:
   - {}
 meta:
   canonicalLink: ''
+  title: 'Teeth Whitening - Giving you a Brighter, Whiter Smile!'
 ---
 **Why did my teeth discolour?**
 

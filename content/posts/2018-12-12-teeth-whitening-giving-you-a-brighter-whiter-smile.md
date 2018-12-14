@@ -52,18 +52,22 @@ The Australian Dental Association recommends that beauticians, hairdressers, and
 
 Your dentist will consider which is your best treatment option depending on factors such as the cause of discolouration and your dental history. 
 
-_In Chair Whitening
-_
+* _In Chair Whitening
+  _
 
 Dentists are able to use a higher concentration of material than what you can use at home, this allows him to paint on the whitening material directly on to your teeth. The material will need to sit on your teeth for a short time before the dentist washes it off. The results are immediate! Unfortunately, the chances of sensitivity is increased when using this method. 
 
-_Take Home Kit
-_
+* _Take Home Kit
+  _
 
 This is probably the most popular form of whitening. The dentist will take impressions of our teeth and fabricate special trays that are designed especially for you. You will be given several tubes of the whitening material and given detailed instructions on how to apply them. This form of whitening is a more gradual process and therefore patients experience less sensitivity. It also allows patients to determine just how white they want their teeth to be (up to a certain extent anyway). If trays are stored correctly between uses, additional whitening material can be purchased for ‘top-up’ bleaching in the months and sometimes years ahead. 
 
+
+
 **What else should I know:
 **
+
+
 
 It is always recommended that patients have a professional exam and clean before proceeding with any whitening treatment. There is little point in applying whitening material to teeth that are covered in plaque or calculus! Decay in teeth may become very sensitive when you have whitening so your dentist may suggest you have your fillings attended to before proceeding with treatment. 
 

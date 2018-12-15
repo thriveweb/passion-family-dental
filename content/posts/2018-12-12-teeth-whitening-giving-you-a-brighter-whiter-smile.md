@@ -3,8 +3,7 @@ template: SinglePost
 title: 'Teeth Whitening - Giving you a Brighter, Whiter Smile!'
 status: Published
 date: 2018-12-12T02:57:36.138Z
-featuredImage: >-
-  https://ucarecdn.com/a8de8aea-4c56-41bf-a820-b4661a9ce6eb/-/crop/311x153/0,0/-/preview/-/enhance/75/
+featuredImage: 'https://ucarecdn.com/1e040e76-2cbc-45a3-a0ec-202b6a415bd3/'
 excerpt: >
   Research has shown that smiling releases happy endorphins that can help us
   feel and look younger, they improve your mood and increase your

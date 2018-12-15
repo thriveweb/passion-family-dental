@@ -1,7 +1,7 @@
 ---
 template: HomePage
 slug: ''
-title: Your Comfort is Our Top Priority
+title: Welcome to Passion Family Dental North Lakes -Your Comfort is Our Top Priority
 subtitle: Book your visit today
 featuredImage: >-
   https://ucarecdn.com/24cc10c7-5259-4170-9269-6a959d1e61f5/-/crop/1244x1157/0,575/-/preview/-/enhance/100/
